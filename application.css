@@ -1,0 +1,55 @@
+body.simple {
+  background: none;
+}
+
+body.simple#bRegistration #container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body.simple #contentWrapper {
+  margin: 0;
+  width: 100%;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+body.simple #container #mainContent {
+  padding: 24px;
+  border: none;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  float: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+body.simple #container h1 {
+  font-size: 16px;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: 250px auto;
+  background-position: 16px bottom;
+  background-image: url(https://franciscan.university/img/logoTxt.png);
+  background-color: #21412a;
+  height: 134px;
+}
+
+body.simple #container h1 a {
+  float: none;
+  text-indent: 0;
+  background: none;
+  font-size: 16px;
+  text-decoration: none;
+  color: #fff;
+  padding: 8px;
+  margin: 0;
+  height: 18px;
+  background-color: rgba(0, 0, 0, 0.37);
+  width: 100%;
+  font-family: 'crimsonRoman',"Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+  letter-spacing: 1px;
+  
+}
