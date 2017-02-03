@@ -1,11 +1,13 @@
 body.simple {
   background: none;
+  background-color: #fafafa;
 }
 
 body.simple#bRegistration #container {
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: #fafafa !important;
 }
 
 body.simple #contentWrapper {
@@ -35,6 +37,8 @@ body.simple #container h1 {
   background-image: url(https://franciscan.university/img/logoTxt.png);
   background-color: #21412a;
   height: 134px;
+  border-bottom: solid 3px #998643;
+  margin-bottom: 50px;
 }
 
 body.simple #container h1 a {
@@ -51,5 +55,6 @@ body.simple #container h1 a {
   width: 100%;
   font-family: 'crimsonRoman',"Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
   letter-spacing: 1px;
-  
+  text-transform: uppercase;
+
 }
