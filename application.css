@@ -42,6 +42,32 @@ body #container h1 a {
 
 }
 
+/* Welcome/Sign Out */
+#container #minorNav {
+  float: right;
+  margin-top: -173px;
+  margin-right: 16px;
+  color: #fff;
+}
+
+#container #minorNav li {
+  border-right: 1px solid #fff;
+}
+
+#container #minorNav li.last a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Header Nav Links */
+#container #mainNav {
+  background-color: rgba(0, 0, 0, 0.37);
+  color: #fff;
+}
+
+#container #mainNav li a:hover  {
+  background-color: #21412a;
+}
 
 /* Form Card */
 
