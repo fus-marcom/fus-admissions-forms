@@ -69,7 +69,7 @@ body #container h1 a {
   float: right;
 }
 
-#container #mainNav li a:hover  {
+#container #mainNav li a:hover, #bProfile #container #mainNav li.tProfile a, #bApplication #container #mainNav li.tApplication a, #bPersonalInfo  #container #mainNav li.tApplication a, #bEducation #container #mainNav li.tApplication a, #bEssays #container #mainNav li.tApplication a, #bRecommendations #container #mainNav li.tApplication a, #bTestScores #container #mainNav li.tApplication a, #bExCurrActivities #container #mainNav li.tApplication a, #bFamilyRelationships #container #mainNav li.tApplication a, #bEvents #container #mainNav li.tEvents a  {
   background-color: rgba(0, 0, 0, 0.37);
   color: #fff;
 }
@@ -109,12 +109,12 @@ dd.required input {
 
 input[type="submit"] {
   border-radius: 2px;
-  background-color: #fff;
+  background-color: #ffc658;
   box-shadow: none;
-  border: 2px solid #21412a;
+  border: none;
   padding: 8px 16px;
   font-size: 16px;
-  color: #21412a;
+  color: #fff;
   margin-top: 16px;
   transition: .2s ease-out;
   cursor: pointer;
@@ -125,7 +125,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #21412a;
+  background-color: rgba(255, 198, 88, 0.85);
   color: #fff;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
 }
@@ -167,6 +167,6 @@ input[type="submit"]:hover {
 }
 
 #side_bar table a {
-  color: #000;
+  color: #ffc658;
   text-decoration: none;
 }
