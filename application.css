@@ -281,6 +281,8 @@ select {
   border: none;
   cursor: pointer;
   font-weight: bold;
+  top: 0;
+  right: 2px;
 }
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
