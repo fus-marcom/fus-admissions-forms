@@ -99,11 +99,11 @@ body #container #mainContent {
   }
 }
 
-dd input {
+dd input[type="text"], dd input[type="textarea"] {
   width: 100%;
 }
 
-dd.required input {
+dd.required input[type="text"], dd.required input[type="textarea"] {
   width: calc(100% - 8px);
 }
 
