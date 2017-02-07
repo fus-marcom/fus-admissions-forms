@@ -232,6 +232,49 @@ select {
   float: right;
 }
 
+.ui-datepicker {
+  width:250px;
+  height: 250px;
+  border: none;
+  border-radius: 2px;
+  transition: all 0.15s ease-out;
+  box-shadow: 0 12px 36px 16px rgba(0,0,0,0.24);
+  padding: 0;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+  border-radius: 2px;
+  border: none;
+  height: 68px;
+  background: none;
+  background-color: #21412a;
+  color: #fff;
+  font-size: 18px;
+}
+
+.ui-datepicker-prev::before {
+  content: "<";
+  color: #fff;
+}
+
+.ui-datepicker-next::before {
+  content: ">";
+  color: #fff;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: none;
+}
+
+.ui-datepicker-prev.ui-state-hover, .ui-datepicker-next.ui-state-hover {
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 /* Sidebar */
 #side_bar {
   float: none;
