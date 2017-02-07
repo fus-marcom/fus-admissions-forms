@@ -234,12 +234,13 @@ select {
 
 .ui-datepicker {
   width:250px;
-  height: 250px;
+  height: 287px !important;
   border: none;
   border-radius: 2px;
   transition: all 0.15s ease-out;
   box-shadow: 0 12px 36px 16px rgba(0,0,0,0.24);
   padding: 0;
+  z-index: 3 !important;
 }
 
 .ui-datepicker .ui-datepicker-header {
@@ -257,11 +258,17 @@ select {
 .ui-datepicker-prev::before {
   content: "<";
   color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 16px;
 }
 
 .ui-datepicker-next::before {
   content: ">";
   color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 16px;
 }
 
 .ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
@@ -273,6 +280,45 @@ select {
   background: none;
   border: none;
   cursor: pointer;
+  font-weight: bold;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  height: 75px;
+  padding-top: 25px;
+  box-sizing: border-box;
+}
+
+.ui-datepicker-title span:last-of-type {
+  display: block;
+  margin: 0 auto;
+  width: 52px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+  border: none;
+  background: none;
+}
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+  background-color: #fff;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  padding: 1em;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+  border: none;
+  background: none;
+  color: #fff;
+  background-color: #21412a;
+  outline: none;
+  transition: all 0.15s ease-out;
 }
 
 /* Sidebar */
