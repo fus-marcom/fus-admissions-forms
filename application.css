@@ -178,20 +178,14 @@ body #contentWrapper {
 }
 
 body #container #mainContent {
-  padding: 24px;
+  padding: 24px 10%;
   border: none;
   box-sizing: border-box;
   margin: 0 auto;
   width: 100%;
-  max-width: 600px;
+  max-width: 70%;
   float: none;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-}
-
-@media screen and (max-width: 600px) {
-  body #container #mainContent {
-    width: 90%;
-  }
 }
 
 dd input[type="text"], dd input[type="textarea"] {
@@ -440,19 +434,13 @@ form .reqFieldExplanation {
 #side_bar {
   float: none;
   width: 100%;
-  max-width: 600px;
-  padding: 24px;
+  max-width: 70%;
+  padding: 24px 10%;
   border: none;
   background: #fff;
   margin: 24px auto;
   box-sizing: border-box;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
-}
-
-@media screen and (max-width: 600px) {
-  #side_bar {
-    width: 90%;
-  }
 }
 
 #side_bar h3 {
@@ -488,7 +476,34 @@ form .reqFieldExplanation {
   font-size: 16px;
 }
 
-/*  Mobile Styles  */
+/* Responsive Card Widths */
+@media screen and (max-width: 860px) {
+  body #container #mainContent {
+    padding: 24px;
+    width: 100%;
+    max-width: 600px;
+
+  }
+
+  #side_bar {
+    width: 100%;
+    max-width: 600px;
+    padding: 24px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  body #container #mainContent {
+    width: 90%;
+  }
+
+  #side_bar {
+    width: 90%;
+  }
+}
+
+/*  Mobile Header Styles  */
 @media screen and (max-width: 720px) {
   body #container h1 {
     background-size: 180px auto;
