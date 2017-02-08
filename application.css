@@ -534,8 +534,8 @@ form .reqFieldExplanation {
 @media screen and (max-width: 500px) {
   body #container h1 {
     background-size: 180px auto;
-    height: 101px;
-    background-position: 8px 29px;
+    height: 81px;
+    background-position: 8px 21px;
   }
 
   body #container h1 a {
@@ -550,7 +550,7 @@ form .reqFieldExplanation {
   }
 
   #container #mainNav {
-    margin-top: -78px;
+    margin-top: -108px;
     width: 100%;
   }
 
@@ -566,11 +566,16 @@ form .reqFieldExplanation {
     font-size: 12px;
   }
 
+  #container #minorNav li {
+    font-size: 10px;
+  }
+
   /* Alt Mobile Nav */
 
   /*body #container h1 {
     background-size: 180px auto;
     height: 137px;
+    background-position: center 13px;
   }
 
   body #container h1 a {
