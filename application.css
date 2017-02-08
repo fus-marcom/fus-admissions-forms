@@ -283,12 +283,16 @@ select {
   font-weight: bold;
   top: 0;
   right: 2px;
+  box-sizing:border-box;
+  height: 75px;
 }
 
 .ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
   height: 75px;
   padding-top: 25px;
   box-sizing: border-box;
+  top: 0;
+  cursor: pointer;
 }
 
 .ui-datepicker-title span:last-of-type {
