@@ -73,8 +73,14 @@ body {
 }
 
 h2, h3, h4, h5 {
-  font-weight: bold;
+  font-weight: 400;
   font-family: 'Roboto', sans-serif;
+}
+
+p, dl {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 body #container {
@@ -121,7 +127,7 @@ body #container h1 a {
 /* Welcome/Sign Out */
 #container #minorNav {
   float: right;
-  margin-top: -173px;
+  margin-top: -178px;
   margin-right: 16px;
   color: #fff;
 }
@@ -139,7 +145,7 @@ body #container h1 a {
 #container #mainNav {
   background-color: #21412a;
   color: #fff;
-  margin-top: -93px;
+  margin-top: -99px;
   float: right;
 }
 
@@ -221,10 +227,16 @@ a.actions.create {
 
 form dl dt {
   position: relative;
+  margin-top: 34px;
+}
+
+form dl dd {
+  margin-bottom: 24px;
 }
 
 form label {
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 form input[type=text]+label,  {
@@ -262,7 +274,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 }
 
 form dl dd.required {
-  border-left: 4px solid #21412a;
+  border-left: 4px solid #8e9fbc;
   padding-left: 4px;
   position: relative;
   left: -7px;
@@ -402,6 +414,13 @@ select {
   transition: all 0.15s ease-out;
 }
 
+form .reqFieldExplanation {
+  color: #8e9fbc;
+  font-size: 13px;
+  border-left: 4px solid #8e9fbc;
+  padding-left: 4px;
+}
+
 /* Sidebar */
 #side_bar {
   float: none;
@@ -451,4 +470,57 @@ select {
 #side_bar table a {
   color: #ffc658;
   text-decoration: none;
+  font-size: 16px;
+}
+
+/*  Mobile Styles  */
+@media screen and (max-width: 720px) {
+  body #container h1 {
+    background-size: 180px auto;
+    height: 101px;
+  }
+
+  body #container h1 a {
+    font-size: 12px;
+    padding: 11px 8px;
+  }
+
+  #container #minorNav {
+    margin-top: -143px;
+  }
+
+  #container #mainNav {
+    margin-top: -81px;
+  }
+
+  #container #mainNav li a {
+    padding: 12px 8px;
+    display: inline;
+  }
+}
+
+/*  Mobile Styles  */
+@media screen and (max-width: 500px) {
+  body #container h1 {
+    background-size: 180px auto;
+    height: 101px;
+  }
+
+  body #container h1 a {
+    font-size: 12px;
+    padding: 11px 8px;
+  }
+
+  #container #minorNav {
+    margin-top: -143px;
+  }
+
+  #container #mainNav {
+    margin-top: -81px;
+  }
+
+  #container #mainNav li a {
+    padding: 12px 8px;
+    display: inline;
+  }
 }
