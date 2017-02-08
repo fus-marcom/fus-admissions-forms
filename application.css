@@ -520,11 +520,12 @@ form .reqFieldExplanation {
   }
 
   #container #mainNav {
-    margin-top: -81px;
+    margin-top: -80px;
   }
 
   #container #mainNav li a {
-    padding: 12px 8px;
+    font-size: 14px;
+    padding: 12px 4px;
     display: inline;
   }
 }
@@ -534,23 +535,61 @@ form .reqFieldExplanation {
   body #container h1 {
     background-size: 180px auto;
     height: 101px;
+    background-position: 8px 29px;
   }
 
   body #container h1 a {
-    font-size: 12px;
-    padding: 11px 8px;
+    font-size: 10px;
+    padding: 0 8px;
+    padding-top: 8px;
+    height: 18px;
   }
 
   #container #minorNav {
-    margin-top: -143px;
+    margin-top: -160px;
   }
 
   #container #mainNav {
-    margin-top: -81px;
+    margin-top: -78px;
+    width: 100%;
+  }
+
+  #container #mainNav li {
+    float: left;
+    width: 33%;
+    text-align: center;
   }
 
   #container #mainNav li a {
-    padding: 12px 8px;
+    padding: 12px 0;
     display: inline;
+    font-size: 12px;
   }
+
+  /* Alt Mobile Nav */
+
+  /*body #container h1 {
+    background-size: 180px auto;
+    height: 137px;
+  }
+
+  body #container h1 a {
+    font-size: 10px;
+    padding: 0 8px;
+    padding-top: 8px;
+    height: 18px;
+    position: absolute;
+    top: 75px;
+    text-align: center;
+  }
+
+  #container #minorNav {
+    margin-top: -180px;
+  }
+
+  #container #mainNav {
+    margin-top: -78px;
+    width: 100%;
+  }*/
+
 }
