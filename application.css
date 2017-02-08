@@ -98,11 +98,12 @@ body #container h1 {
   background-repeat: no-repeat;
   background-size: 250px auto;
   background-position: 16px bottom;
-  background-image: url(https://franciscan.university/img/logoTxt.png);
-  background-color: #21412a;
-  height: 134px;
+  background-image: url(https://franciscan.university/img/side-nav-logo.jpg);
+  background-color: #fff;
+  height: 111px;
   border-bottom: solid 3px #998643;
   margin-bottom: 50px;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
 body #container h1 a {
@@ -112,11 +113,11 @@ body #container h1 a {
   box-sizing: border-box;
   font-size: 16px;
   text-decoration: none;
-  color: #fff;
+  color: #21412a;
   padding: 8px;
   margin: 0;
   height: 33px;
-  background-color: rgba(0, 0, 0, 0.37);
+  background-color: transparent;
   width: 100%;
   font-family: 'crimsonRoman',"Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
   letter-spacing: 1px;
@@ -127,26 +128,40 @@ body #container h1 a {
 /* Welcome/Sign Out */
 #container #minorNav {
   float: right;
-  margin-top: -178px;
+  margin-top: -154px;
   margin-right: 16px;
-  color: #fff;
+  color: #21412a;
 }
 
 #container #minorNav li {
-  border-right: 1px solid #fff;
+  border-right: 1px solid #21412a;
 }
 
 #container #minorNav li.last a {
-  color: #fff;
+  color: #21412a;
   text-decoration: none;
 }
 
 /* Header Nav Links */
 #container #mainNav {
-  background-color: #21412a;
+  background-color: transparent;
   color: #fff;
-  margin-top: -99px;
+  margin-top: -82px;
   float: right;
+}
+
+#container #mainNav li a {
+  font-size: 16px;
+  color: #21412a;
+  display: inline;
+  padding: 12px 8px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#container #mainNav li:last-of-type a {
+  margin-right: 16px;
 }
 
 #container #mainNav li a:hover, #bProfile #container #mainNav li.tProfile a, #bApplication #container #mainNav li.tApplication a, #bPersonalInfo  #container #mainNav li.tApplication a, #bEducation #container #mainNav li.tApplication a, #bEssays #container #mainNav li.tApplication a, #bRecommendations #container #mainNav li.tApplication a, #bTestScores #container #mainNav li.tApplication a, #bExCurrActivities #container #mainNav li.tApplication a, #bFamilyRelationships #container #mainNav li.tApplication a, #bEvents #container #mainNav li.tEvents a  {
