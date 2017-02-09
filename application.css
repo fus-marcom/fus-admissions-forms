@@ -572,7 +572,7 @@ form .reqFieldExplanation {
 
   /* Alt Mobile Nav */
 
-  /*body #container h1 {
+  body #container h1 {
     background-size: 180px auto;
     height: 137px;
     background-position: center 13px;
@@ -595,6 +595,6 @@ form .reqFieldExplanation {
   #container #mainNav {
     margin-top: -78px;
     width: 100%;
-  }*/
+  }
 
 }
