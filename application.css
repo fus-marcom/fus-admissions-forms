@@ -203,7 +203,7 @@ input[type="submit"], a.actions.create {
   border: none;
   padding: 8px 16px;
   font-size: 16px;
-  color: #fff;
+  color: #fff !important;
   margin-top: 16px;
   transition: .2s ease-out;
   cursor: pointer;
@@ -225,7 +225,7 @@ input[type="submit"]:hover, a.actions.create:hover, input[type="submit"]:focus, 
   padding: 8px 16px;
   font-size: 16px;
   background-color: rgba(255, 198, 88, 0.85);
-  color: #fff;
+  color: #fff !important;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
 }
 
@@ -244,14 +244,16 @@ form dl dd {
 }
 
 form label {
-  font-weight: 300;
   line-height: 1.5;
+  font-size: .8rem;
+  color: #9e9e9e;
+  font-weight: normal;
 }
 
 form input[type=text]+label,  {
   color: #9e9e9e;
   position: absolute;
-  top: 0.8rem;
+  top: 0.9rem;
   left: 0;
   font-size: 1rem;
   cursor: text;
@@ -261,7 +263,7 @@ form input[type=text]+label,  {
   transform: translateY(-140%);
 }
 
-input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea {
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9e9e9e;
@@ -275,9 +277,18 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
   box-shadow: none;
   box-sizing: content-box;
   transition: all 0.3s;
+  color: rgba(0,0,0,0.87);
+  font-size: 16px;
+  font-weight: 300;
 }
 
-input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+.field_radio label {
+  font-size: 1rem;
+  line-height: 25px;
+  height: 25px;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea:focus:not([readonly]) {
   border-bottom: 1px solid #ffc658;
   box-shadow: 0 1px 0 0 #ffc658;
 }
@@ -295,7 +306,7 @@ select {
   background: none;
   border: none;
   border-bottom: 1px solid #d3d6d9;
-  color: #585e69;
+  color: rgba(0,0,0,0.87);
   font-weight: 300;
   position: relative;
   z-index: 2;
@@ -310,11 +321,26 @@ select {
   outline-style: initial;
   outline-width: 0px;
   line-height: 1.4;
-  padding: 0 0 10px;
+  font-size: 16px;
+  color: rgba(0,0,0,0.87);
+  font-size: 16px;
 }
 
 .field_select::before {
   content: "▼";
+  color: initial;
+  position: relative;
+  right: 0px;
+  top: 12px;
+  bottom: 0;
+  height: 10px;
+  margin: auto 0;
+  font-size: 10px;
+  line-height: 10px;
+  float: right;
+}
+
+dd.field_disabled_select::before {
   color: initial;
   position: relative;
   right: 0px;
@@ -455,6 +481,7 @@ form .reqFieldExplanation {
   color: #ffc658;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 #side_bar hr {
@@ -464,6 +491,10 @@ form .reqFieldExplanation {
 #side_bar h4 {
   margin-bottom: 8px;
   margin-top: 8px;
+}
+
+#side_bar p.note {
+  font-size: 12px;
 }
 
 #side_bar table.home_nav {
