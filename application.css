@@ -192,6 +192,10 @@ body #container h1 a, body.simple #container h1 a {
   color: #fff;
 }
 
+body.simple#bLogin #container {
+  width: 100%;
+}
+
 /* Form Card */
 
 body #contentWrapper, body.simple #contentWrapper {
@@ -201,7 +205,8 @@ body #contentWrapper, body.simple #contentWrapper {
 }
 
 body.simple #contentWrapper {
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
 }
 
 body #container #mainContent, body.simple #container #mainContent {
@@ -213,6 +218,20 @@ body #container #mainContent, body.simple #container #mainContent {
   max-width: 70%;
   float: none;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.notice {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  width: 100vw;
+  left: 0;
+  text-align: center;
+  border: none;
+  background: none;
+  background-color: #323232;
+  color: #fff;
+  font-size: 14px;
 }
 
 dd input[type="text"], dd input[type="textarea"] {
