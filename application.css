@@ -66,7 +66,7 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-body {
+body, body.simple {
   background: none;
   background-color: #fafafa;
   font-family: 'Roboto', sans-serif;
@@ -83,7 +83,7 @@ p, dl {
   line-height: 1.5;
 }
 
-body #container {
+body #container, body.simple #container {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -91,8 +91,12 @@ body #container {
   border: none;
 }
 
+body.simple#bRegistration #container {
+  width: 100%;
+}
+
 /* Header */
-body #container h1 {
+body #container h1, body.simple #container h1 {
   font-size: 16px;
   text-decoration: none;
   background-repeat: no-repeat;
@@ -106,7 +110,7 @@ body #container h1 {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
-body #container h1 a {
+body #container h1 a, body.simple #container h1 a {
   float: none;
   text-indent: 0;
   background: none;
@@ -124,6 +128,19 @@ body #container h1 a {
   text-transform: uppercase;
 
 }
+
+  /* Help */
+  .help {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  .help a {
+    color: #21412a;
+    text-decoration: none;
+    font-size: 14px;
+  }
 
 /* Welcome/Sign Out */
 #container #minorNav {
@@ -171,13 +188,17 @@ body #container h1 a {
 
 /* Form Card */
 
-body #contentWrapper {
+body #contentWrapper, body.simple #contentWrapper {
   padding: 0;
   border: none;
   box-shadow: none;
 }
 
-body #container #mainContent {
+body.simple #contentWrapper {
+  margin: 0;
+}
+
+body #container #mainContent, body.simple #container #mainContent {
   padding: 24px 10%;
   border: none;
   box-sizing: border-box;
@@ -509,7 +530,7 @@ form .reqFieldExplanation {
 
 /* Responsive Card Widths */
 @media screen and (max-width: 860px) {
-  body #container #mainContent {
+  body #container #mainContent, body.simple #container #mainContent {
     padding: 24px;
     width: 100%;
     max-width: 600px;
@@ -525,7 +546,7 @@ form .reqFieldExplanation {
 }
 
 @media screen and (max-width: 600px) {
-  body #container #mainContent {
+  body #container #mainContent, body.simple #container #mainContent {
     width: 90%;
   }
 
@@ -536,12 +557,12 @@ form .reqFieldExplanation {
 
 /*  Mobile Header Styles  */
 @media screen and (max-width: 720px) {
-  body #container h1 {
+  body #container h1, body.simple #container h1 {
     background-size: 180px auto;
     height: 101px;
   }
 
-  body #container h1 a {
+  body #container h1 a, body.simple #container h1 a {
     font-size: 12px;
     padding: 11px 8px;
   }
@@ -563,13 +584,13 @@ form .reqFieldExplanation {
 
 /*  Mobile Styles  */
 @media screen and (max-width: 500px) {
-  body #container h1 {
+  body #container h1, body.simple #container h1 {
     background-size: 180px auto;
     height: 81px;
     background-position: 8px 21px;
   }
 
-  body #container h1 a {
+  body #container h1 a, body.simple #container h1 a {
     font-size: 10px;
     padding: 0 8px;
     padding-top: 8px;
@@ -603,13 +624,13 @@ form .reqFieldExplanation {
 
   /* Alt Mobile Nav */
 
-  body #container h1 {
+  body #container h1, body.simple #container h1 {
     background-size: 180px auto;
     height: 137px;
     background-position: center 13px;
   }
 
-  body #container h1 a {
+  body #container h1 a, body.simple #container h1 a {
     font-size: 10px;
     padding: 0 8px;
     padding-top: 8px;
