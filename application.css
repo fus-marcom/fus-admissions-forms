@@ -384,7 +384,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
   font-weight: 300;
 }
 
-.field_radio label {
+.field_radio label, .field_checkbox label {
   font-size: 1rem;
   line-height: 25px;
   height: 25px;
