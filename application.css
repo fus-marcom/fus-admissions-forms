@@ -234,6 +234,36 @@ body #container #mainContent, body.simple #container #mainContent {
   font-size: 14px;
 }
 
+  /* Table Styles */
+
+table.dataGrid tr th, table.dataGrid tr td {
+  padding: 16px;
+}
+
+table.dataGrid tr.odd {
+  background: #f2f2f2;
+}
+
+table.dataGrid {
+  font-size: 16px;
+  border: none;
+  width: 100%;
+}
+
+table.dataGrid tr th {
+  border: none;
+}
+
+table.dataGrid tr td {
+  border: none;
+}
+
+thead {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+  /* Inputs */
+
 dd input[type="text"], dd input[type="textarea"] {
   width: 100%;
 }
