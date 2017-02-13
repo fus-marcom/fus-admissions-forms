@@ -84,9 +84,14 @@ p, dl {
 }
 
 a {
-  color: #ffc658;
+  color: hsla(40, 100%, 56%, 1);
   font-weight: normal;
   text-decoration: none;
+}
+
+a.edit {
+  color: hsla(40, 100%, 56%, 1);
+  font-size: 14px;
 }
 
 body #container, body.simple #container {
@@ -355,6 +360,10 @@ form label {
   font-size: .8rem;
   color: rgba(0, 0, 0, 0.54);
   font-weight: normal;
+}
+
+.field_information p i b {
+  font-size: normal;
 }
 
 form input[type=text]+label,  {
