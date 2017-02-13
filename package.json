@@ -1,0 +1,15 @@
+{
+  "name": "admissions-forms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:JesseRWeigel/fus-admissions-forms.git",
+  "author": "Jesse R Weigel <jesse@jesseweigel.com>",
+  "license": "MIT",
+  "dependencies": {
+    "clean-css": "^4.0.6"
+  },
+
+  "scripts": {
+    "min-css": "cleancss -o min/application.min.css application.css"
+  }
+}

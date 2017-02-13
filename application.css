@@ -316,7 +316,7 @@ form div.formError {
 
 input[type="submit"], a.actions.create {
   border-radius: 2px;
-  background-color: #ffc658;
+  background-color: hsla(40, 100%, 56%, 1);
   box-shadow: none;
   border: none;
   padding: 8px 16px;
@@ -600,7 +600,7 @@ form .reqFieldExplanation {
 }
 
 #side_bar h3 span a {
-  color: #ffc658;
+  color: hsla(40, 100%, 56%, 1);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -624,7 +624,7 @@ form .reqFieldExplanation {
 }
 
 #side_bar table a {
-  color: #ffc658;
+  color: hsla(40, 100%, 56%, 1);
   text-decoration: none;
   font-size: 16px;
 }
