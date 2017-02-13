@@ -116,16 +116,16 @@ body #container h1, body.simple #container h1 {
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
 }
 
-body#disabled_forms {
+body#disabled_forms #mainContent {
   max-width: 100%;
   box-shadow: none;
 }
 
-#disabled_forms h1 {
-  margin: 0;
+#disabled_forms div#hasJavaScript {
+  margin-top: -48px;
 }
 
-#disabled_forms h1.review {
+#disabled_forms #mainContent h1.review {
   font-family: 'Roboto', sans-serif;
   background: none;
   border: none;
@@ -133,6 +133,7 @@ body#disabled_forms {
   font-size: 32px;
   height: 12px;
   color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 28px;
 }
 
 #disabled_forms h2.review {
@@ -140,6 +141,10 @@ body#disabled_forms {
   color: rgba(0, 0, 0, 0.54);
   text-decoration: none;
   margin-bottom: 0.75em;
+}
+
+#disabled_forms form label {
+  color: #000;
 }
 
 body #container h1 a, body.simple #container h1 a {
