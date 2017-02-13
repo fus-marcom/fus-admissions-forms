@@ -310,7 +310,7 @@ dd.required input[type="text"], dd.required input[type="textarea"] {
 
 form div.formError {
   color: #F44336;
-  padding: 2px 3px 2px 20px;
+  padding: 2px 3px 2px 8px;
   background: none;
 }
 
