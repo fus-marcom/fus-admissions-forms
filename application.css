@@ -308,6 +308,12 @@ dd.required input[type="text"], dd.required input[type="textarea"] {
   width: calc(100% - 8px);
 }
 
+form div.formError {
+  color: #F44336;
+  padding: 2px 3px 2px 20px;
+  background: none;
+}
+
 input[type="submit"], a.actions.create {
   border-radius: 2px;
   background-color: #ffc658;
