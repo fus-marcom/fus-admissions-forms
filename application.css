@@ -315,7 +315,6 @@ form div.formError {
 }
 
 input[type="submit"], a.actions.create {
-  border-radius: 2px;
   background-color: hsla(40, 100%, 56%, 1);
   box-shadow: none;
   border: none;
@@ -337,6 +336,7 @@ input[type="submit"], a.actions.create {
   outline-color: initial;
   outline-style: initial;
   outline-width: 0px;
+  -webkit-appearance: none;
 }
 
 input[type="submit"]:hover, a.actions.create:hover, input[type="submit"]:focus, a.actions.create:focus  {

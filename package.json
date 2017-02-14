@@ -6,10 +6,11 @@
   "author": "Jesse R Weigel <jesse@jesseweigel.com>",
   "license": "MIT",
   "dependencies": {
-    "clean-css": "^4.0.6"
+    "clean-css": "^4.0.6",
+    "postcss": "^5.2.13"
   },
-
   "scripts": {
-    "min-css": "cleancss -o min/application.min.css application.css"
+    "min-css": "cleancss -o min/application.min.css application.css",
+    "postcss": "postcss -r application.css"
   }
 }
