@@ -3,4 +3,9 @@ console.log('w007!!!1');
 
 // Test to disble mobile redirect
 
-function checkForMobile() {return 100}; 
+Object.defineProperties(window, {
+  myAgent: {
+    value: '',
+    enumerable: true
+  }
+});
