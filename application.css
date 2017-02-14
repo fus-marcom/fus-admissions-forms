@@ -322,6 +322,7 @@ input[type="submit"], a.actions.create {
   font-size: 16px;
   color: #fff !important;
   margin-top: 16px;
+  -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
   cursor: pointer;
   letter-spacing: .5px;
@@ -379,6 +380,7 @@ form input[type=text]+label,  {
   left: 0;
   font-size: 1rem;
   cursor: text;
+  -webkit-transition: .2s ease-out;
   transition: .2s ease-out;
   font-size: .8rem;
   -webkit-transform: translateY(-140%);
@@ -398,6 +400,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
   padding: 0;
   box-shadow: none;
   box-sizing: content-box;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   color: rgba(0,0,0,0.87);
   font-size: 16px;
@@ -481,6 +484,7 @@ dd.field_disabled_select::before {
   border: none;
   border-radius: 2px;
   display: none;
+  -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
   box-shadow: 0 12px 36px 16px rgba(0,0,0,0.24);
   padding: 0;
@@ -568,6 +572,7 @@ dd.field_disabled_select::before {
   color: #fff;
   background-color: #21412a;
   outline: none;
+  -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
 
