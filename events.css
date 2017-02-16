@@ -68,5 +68,114 @@
 
 body {
   background: none !important;
-  font-family: 'Roboto', sans-serif;
+  background-color: #fafafa !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 300;
+}
+
+
+/* Datepicker */
+.ui-datepicker {
+  width:250px;
+  height: 287px !important;
+  border: none;
+  border-radius: 2px;
+  display: none;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  box-shadow: 0 12px 36px 16px rgba(0,0,0,0.24);
+  padding: 0;
+  z-index: 3 !important;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  position: relative;
+  padding: .2em 0;
+  border-radius: 2px;
+  border: none;
+  height: 68px;
+  background: none;
+  background-color: #21412a;
+  color: #fff;
+  font-size: 18px;
+}
+
+.ui-datepicker-prev::before {
+  content: "<";
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 16px;
+}
+
+.ui-datepicker-next::before {
+  content: ">";
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  width: 16px;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  display: none !important;
+}
+
+.ui-datepicker-prev.ui-state-hover, .ui-datepicker-next.ui-state-hover {
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  top: 0;
+  right: 2px;
+  box-sizing:border-box;
+  height: 75px;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next {
+  height: 75px;
+  padding-top: 25px;
+  box-sizing: border-box;
+  top: 0;
+  cursor: pointer;
+}
+
+.ui-datepicker-title span:last-of-type {
+  display: block;
+  margin: 0 auto;
+  width: 52px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+  border: none;
+  background: none;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.ui-datepicker table {
+  width: 100%;
+  font-size: 10.7px;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+  background-color: #fff;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  padding: 1em;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus {
+  border: none;
+  background: none;
+  color: #fff;
+  background-color: #21412a;
+  outline: none;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
 }
