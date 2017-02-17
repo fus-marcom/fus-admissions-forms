@@ -17,6 +17,6 @@ console.log('w007!!!1');
       </nav>
 
       `);
-
+    });
 
  }(jQuery));
