@@ -1,5 +1,5 @@
 console.log('w007!!!1');
-
+jQuery = $.noConflict(true);
 
 // Use jQuery here
 (function($) {
