@@ -1,8 +1,7 @@
 console.log('w007!!!1');
 
 // Use jQuery here
-(function($) {
-  jQuery(function() {
+jQuery( document ).ready(function( $ ) {
     $('link[href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"]').appendTo('head');
 
     $('link[href="https://jesserweigel.github.io/fus-admissions-forms/events.css"]').appendTo('head');
@@ -17,5 +16,3 @@ console.log('w007!!!1');
 
       `);
     });
-
- }(jQuery));
