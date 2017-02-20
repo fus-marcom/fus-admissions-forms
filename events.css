@@ -74,11 +74,70 @@ body {
   color: rgba(0, 0, 0, 0.87);
 }
 
+nav {
+  background-color: #fff;
+  height: 77px;
+  margin-bottom: 6px;
+  border-bottom: 3px solid #998643;
+ }
+
+ nav .brand-logo img {
+   height: 68px;
+   margin-top: 5px;
+ }
+
+
 h1 {
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.87) !important;
   font-weight: 300;
+  margin-top: 16px !important;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
+.statusBar {
+  display: none;
+}
+
+.centerPane {
+  margin: 0 auto;
+  padding-top: 16px;
+  width: 100% !important;
+}
+
+form {
+  padding: 24px 10%;
+  border: none;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 70%;
+  float: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 860px) {
+  h1 {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  form {
+    padding: 24px;
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    width: 90%;
+  }
+
+  form {
+    width: 90%;
+  }
+}
 
 /* Datepicker */
 .ui-datepicker {
