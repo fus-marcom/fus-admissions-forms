@@ -285,6 +285,9 @@ body .cartstatus2 a, body .cartstatus a {
 }
 
   /* Event Results Table*/
+  body .resultTable {
+    max-height: none;
+  }
 
   body th.resultsHeader:nth-of-type{
     font-size: 16px;
