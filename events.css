@@ -241,3 +241,50 @@ form {
   -webkit-transition: all 0.15s ease-out;
   transition: all 0.15s ease-out;
 }
+
+/* Buttons */
+body, a.btnAct {
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  border: none;
+  line-height: 30px;
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  width: auto;
+  font-weight: 400;
+  background-color: hsla(40, 100%, 56%, 1);
+  box-shadow: none;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff !important;
+  margin-top: 16px;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  outline-color: initial;
+  outline-style: initial;
+  outline-width: 0px;
+  -webkit-appearance: none;
+}
+
+body, a.btnAct:hover {
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: rgba(255, 198, 88, 0.85);
+  color: #fff !important;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+}
