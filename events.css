@@ -141,7 +141,7 @@ form {
 
 /* Datepicker */
 .ui-datepicker {
-  width:250px;
+  width:259px;
   height: 287px !important;
   border: none;
   border-radius: 2px;
@@ -156,8 +156,10 @@ form {
 .ui-datepicker .ui-datepicker-header {
   position: relative;
   padding: .2em 0;
-  border-radius: 2px;
   border: none;
+  border-radius: 2px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
   height: 68px;
   background: none;
   background-color: #21412a;
@@ -203,6 +205,7 @@ form {
   box-sizing: border-box;
   top: 0;
   cursor: pointer;
+  background: none !important;
 }
 
 .ui-datepicker-title span:last-of-type {
