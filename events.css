@@ -247,6 +247,13 @@ th.resultsHeader:nth-of-type(3), .costCol {
   display: none;
 }
 
+/* Event Results Table*/
+body .eventTitle {
+  color: rgba(0,0,0,0.87) !important;
+  margin-left: 0;
+  text-align: center;
+}
+
 
 
 /* Buttons */
@@ -288,6 +295,7 @@ body a.btnAct {
 
 body a.btnAct:hover {
   padding: 8px 16px;
+  border: none;
   font-size: 16px;
   background-color: rgba(255, 198, 88, 0.85);
   color: #fff !important;
