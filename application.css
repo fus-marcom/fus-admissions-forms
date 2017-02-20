@@ -452,7 +452,7 @@ select {
 }
 
 .field_select::before {
-  content: "▼";
+  content: "\25bc";
   color: initial;
   position: relative;
   right: 0px;

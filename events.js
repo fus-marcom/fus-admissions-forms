@@ -1,6 +1,5 @@
 console.log('w007!!!1');
 
-jQuery = $;
 // Use jQuery here
 jQuery( document ).ready(function( $ ) {
     $('link[href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"]').appendTo('head');
@@ -11,9 +10,7 @@ jQuery( document ).ready(function( $ ) {
       <nav>
        <div class="nav-wrapper">
          <a href="#" class="brand-logo center"><img class="responsive-img" src="https://franciscan.university/img/side-nav-logo.jpg" /></a>
-
        </div>
       </nav>
-
       `);
     });
