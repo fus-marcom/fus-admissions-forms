@@ -251,14 +251,37 @@ form {
   display: none;
 }
 
-body .cartstatus2 {
+body .cartstatus2, body .cartstatus {
   position: inherit;
   float: none;
   color: rgba(0,0,0,0.87)
 }
 
-body .cartstatus2 a {
+body .cartstatus2 a, body .cartstatus a {
   float: left;
+}
+
+@media screen and (max-width: 860px) {
+  h1 {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  form {
+    padding: 24px;
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    width: 90%;
+  }
+
+  form {
+    width: 90%;
+  }
 }
 
   /* Event Results Table*/
@@ -284,7 +307,7 @@ body .cartstatus2 a {
 
   .dateCol, .ticketCol, .eventCol, .costCol {
      border-bottom: none;
-     border-left: none; 
+     border-left: none;
   }
 
 
@@ -333,4 +356,22 @@ body a.btnAct:hover {
   background-color: rgba(255, 198, 88, 0.85);
   color: #fff !important;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+}
+
+
+/* Form iFrames */
+iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-height: 100vh;
+}
+
+.wForm .oneField input {
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-image: initial;
+  border-bottom: 1px solid rgb(158, 158, 158);
 }
