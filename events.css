@@ -243,16 +243,49 @@ form {
 }
 
 /* Results page */
-th.resultsHeader:nth-of-type(3), .costCol {
+.event-results form:first-of-type {
+  padding: 24px 2%;
+}
+
+.event-results form:nth-of-type(2) {
   display: none;
 }
 
-/* Event Results Table*/
-body .eventTitle {
-  color: rgba(0,0,0,0.87) !important;
-  margin-left: 0;
-  text-align: center;
+body .cartstatus2 {
+  position: inherit;
+  float: none;
+  color: rgba(0,0,0,0.87)
 }
+
+body .cartstatus2 a {
+  float: left;
+}
+
+  /* Event Results Table*/
+
+  body th.resultsHeader:nth-of-type{
+    font-size: 16px;
+  }
+
+  th.resultsHeader:nth-of-type(3), .costCol {
+    display: none;
+  }
+
+  body .eventTitle {
+    color: rgba(0,0,0,0.87) !important;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  body .dateCol, body .eventTitle {
+    font-size: 16px !important;
+    font-weight: 400;
+  }
+
+  .dateCol, .ticketCol, .eventCol, .costCol {
+     border-bottom: none;
+     border-left: none; 
+  }
 
 
 

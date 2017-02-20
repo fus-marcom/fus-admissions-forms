@@ -14,7 +14,14 @@ jQuery( document ).ready(function( $ ) {
     </nav>
     `);
 
-  $('.resultTable').addClass('responsive-table');
+  $('.resultTable').addClass('responsive-table striped');
+
+  // Add class to identify pages
+  const pageTitle=  $('h1').text();
+
+  if (pageTitle === 'Event Search Results') {
+    $('html').addClass('event-results');
+  }
 
 
 });
