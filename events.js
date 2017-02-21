@@ -48,7 +48,7 @@ jQuery( document ).ready(function( $ ) {
       let ticketName = $(ticketInput).attr('name');
       let ticketMinusName = $(ticketInput).prev().prev().attr('name');
 
-      if (ticketMinusName === undefined) {
+      if (ticketMinusName !== undefined) {
         $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}" checked="checked"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-plus-name=${ticketName} />`);
       } else {
           $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-plus-name=${ticketName} ticket-minus-name=${ticketMinusName} />`);
