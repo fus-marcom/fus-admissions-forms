@@ -322,6 +322,11 @@ body .cartstatus2 a, body .cartstatus a {
     display: none;
   }
 
+  body .ticketCol>div {
+    margin: 0 auto !important;
+    width: 20px !important;
+  }
+
 
 
 /* Buttons */

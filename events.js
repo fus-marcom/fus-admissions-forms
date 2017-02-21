@@ -21,6 +21,15 @@ jQuery( document ).ready(function( $ ) {
     $('html').addClass('event-results');
   }
 
+  $('h1').addClass('page-title-heading');
+
+  //fix width for event results title heading
+  $('h1').parent().css('width', '100%');
+
+  $('h1').parent().next().next().next().css({'max-width': '70%', 'margin': '16px auto' });
+
+  $('.event-results .resultsHeader:nth-of-type(4)>div').html('Attending');
+
   ( function replaceTickets() {
     console.log('run replaceTickets');
 
