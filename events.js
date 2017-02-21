@@ -23,7 +23,7 @@ jQuery( document ).ready(function( $ ) {
     $('html').addClass('event-results');
   }
 
-  function replaceTickets() {
+  ( function replaceTickets() {
     let $inputArrMinus = $('input.ticketButtons-lt');
     let $inputArrPlus = $('input.ticketButtons-rt');
 
@@ -59,6 +59,6 @@ jQuery( document ).ready(function( $ ) {
       }
 
     });
-  }
+  })();
 
 });
