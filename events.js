@@ -42,14 +42,14 @@ jQuery( document ).ready(function( $ ) {
   // });
 
   //Hide default ticket icons
-  $inputArrMinus.next().next().hide();
-  $inputArrMinus.next().hide();
-  $inputArrMinus.hide();
+  $inputArrPlus.prev().prev().hide();
+  $inputArrPlus.prev().hide();
+  $inputArrPlus.hide();
 
 
   $('.ticket-box-label').not('[type="checkbox"]:checked+label').click(function() {
     //remove check
-    let boxName = this.attr('for');
+    let boxName = $(this).attr('for');
     $(`input[name="${boxName}"]`).attr('checked', 'checked');
     //trigger click on ticket plus
 
@@ -57,7 +57,7 @@ jQuery( document ).ready(function( $ ) {
 
   $('[type="checkbox"]:checked+label').click(function() {
     //remove check
-    let boxName = this.attr('for');
+    let boxName = $(this).attr('for');
     $(`input[name="${boxName}"]`).attr('checked', '');
     //trigger click on ticket minus
   });
