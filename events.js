@@ -14,9 +14,6 @@ jQuery( document ).ready(function( $ ) {
     </nav>
     `);
 
-
-
-
   // Add class to identify pages
   const pageTitle=  $('h1').text();
 
@@ -25,16 +22,21 @@ jQuery( document ).ready(function( $ ) {
   }
 
   ( function replaceTickets() {
-    ( function addTableClasses() {
+    console.log('run replaceTickets');
+
+    function addTableClasses() {
       $('.resultTable').addClass('responsive-table striped');
-    })();
+    }
+    addTableClasses();
 
     function checkForTickets()
     {
-        if($('.ticketPane')) {
+        if($('.ticketPane').length > 0) {
+          console.log('ticketPane exists');
           replaceTickets();
         } else {
-          setTimeout( checkDOMChange, 100 );
+          console.log('checking');
+          setTimeout( checkForTickets, 100 );
         }
     }
 
@@ -45,12 +47,20 @@ jQuery( document ).ready(function( $ ) {
     $inputArrPlus.map(function(i, ticketInput) {
       let ticketName = $(ticketInput).attr('name');
       let ticketMinusName = $(ticketInput).prev().prev().attr('name');
-      $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-plus-name=${ticketName} ticket-minus-name=${ticketMinusName} />`);
+
+      if (ticketMinusName === "undefined") {
+        $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}" checked="checked"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-plus-name=${ticketName} />`);
+      } else {
+          $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-plus-name=${ticketName} ticket-minus-name=${ticketMinusName} />`);
+      }
     });
+
+    $('.ticket-box-label').not('[ticket-minus-name="undefined"]').
 
     //Hide default ticket icons
     $inputArrPlus.prev().prev().hide();
     $inputArrPlus.prev().remove();
+    $('.ticketPane').remove();
     $inputArrPlus.hide();
 
 
@@ -62,14 +72,18 @@ jQuery( document ).ready(function( $ ) {
         $(box).attr('checked', '');
         //Click minus icon
         let minusIcon = $(`[name="${$(this).attr('ticket-minus-name')}"]`);
-        $(minusIcon).click();
+        $('.ticketPane').remove();
         checkForTickets();
+        $(minusIcon).click();
+
       } else {
         $(box).attr('checked', 'checked');
         //Click plus icon
         let plusIcon = $(`[name="${$(this).attr('ticket-plus-name')}"]`);
-        $(plusIcon).click();
+        $('.ticketPane').remove();
         checkForTickets();
+        $(plusIcon).click();
+
       }
 
     });

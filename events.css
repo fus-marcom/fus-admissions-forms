@@ -318,6 +318,10 @@ body .cartstatus2 a, body .cartstatus a {
     visibility: hidden;
   }
 
+  body .ticketCol>span {
+    display: none;
+  }
+
 
 
 /* Buttons */
