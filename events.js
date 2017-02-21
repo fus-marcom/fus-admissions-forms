@@ -69,7 +69,7 @@ jQuery( document ).ready(function( $ ) {
       if ($(box).attr('checked') === true) {
         $(box).attr('checked', '');
         //Click minus icon
-        let minusIcon = $(`[name="${$(this).attr('ticket-minus-name')}"]`);
+        let minusIcon = $(box).prev().prev();
         $('.ticketPane').remove();
         checkForTickets();
         $(minusIcon).click();
