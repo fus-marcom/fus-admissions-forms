@@ -286,7 +286,7 @@ body .cartstatus2 a, body .cartstatus a {
 
   /* Event Results Table*/
   body .resultTable {
-    max-height: none;
+    max-height: none !important;
   }
 
   body th.resultsHeader:nth-of-type{
@@ -311,6 +311,10 @@ body .cartstatus2 a, body .cartstatus a {
   .dateCol, .ticketCol, .eventCol, .costCol {
      border-bottom: none;
      border-left: none;
+  }
+
+  body .ticketPane, body .ticketButtons-rt, body .ticketButtons-lt {
+    visibility: hidden;
   }
 
 

@@ -23,37 +23,42 @@ jQuery( document ).ready(function( $ ) {
     $('html').addClass('event-results');
   }
 
-  const $inputArrMinus = $('input.ticketButtons-lt');
-  const $inputArrPlus = $('input.ticketButtons-rt');
+  function replaceTickets() {
+    let $inputArrMinus = $('input.ticketButtons-lt');
+    let $inputArrPlus = $('input.ticketButtons-rt');
 
-  //Make a loop or map to add correct for attr to labels
-  $inputArrPlus.map(function(i, ticketInput) {
-    let ticketName = $(ticketInput).attr('name');
-    let ticketMinusName = $(ticketInput).prev().prev().attr('name');
-    $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-plus-name=${ticketName} ticket-minus-name=${ticketMinusName} />`);
-  });
+    //Make a loop or map to add correct for attr to labels
+    $inputArrPlus.map(function(i, ticketInput) {
+      let ticketName = $(ticketInput).attr('name');
+      let ticketMinusName = $(ticketInput).prev().prev().attr('name');
+      $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-plus-name=${ticketName} ticket-minus-name=${ticketMinusName} />`);
+    });
 
-  //Hide default ticket icons
-  $inputArrPlus.prev().prev().hide();
-  $inputArrPlus.prev().hide();
-  $inputArrPlus.hide();
+    //Hide default ticket icons
+    $inputArrPlus.prev().prev().hide();
+    $inputArrPlus.prev().hide();
+    $inputArrPlus.hide();
 
 
-  $('.ticket-box-label').click(function() {
-    //remove check
-    let boxName = $(this).attr('for');
-    let box = $(`input[name="${boxName}"]`);
-    if ($(box).attr('checked') === true) {
-      $(box).attr('checked', '');
-      //Click minus icon
-      let minusIcon = $(`[name="${$(this).attr('ticket-minus-name')}"]`);
-      $(minusIcon).click();
-    } else {
-      $(box).attr('checked', 'checked');
-      //Click plus icon
-      let plusIcon = $(`[name="${$(this).attr('ticket-plus-name')}"]`);
-      $(plusIcon).click();
-    }
+    $('.ticket-box-label').click(function() {
+      //remove check
+      let boxName = $(this).attr('for');
+      let box = $(`input[name="${boxName}"]`);
+      if ($(box).attr('checked') === true) {
+        $(box).attr('checked', '');
+        //Click minus icon
+        let minusIcon = $(`[name="${$(this).attr('ticket-minus-name')}"]`);
+        $(minusIcon).click();
+        replaceTickets();
+      } else {
+        $(box).attr('checked', 'checked');
+        //Click plus icon
+        let plusIcon = $(`[name="${$(this).attr('ticket-plus-name')}"]`);
+        $(plusIcon).click();
+        replaceTickets();
+      }
 
-  });
+    });
+  }
+
 });
