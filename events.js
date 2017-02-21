@@ -72,6 +72,7 @@ jQuery( document ).ready(function( $ ) {
         let minusIcon = $(box).prev().prev();
         $('.ticketPane').remove();
         checkForTickets();
+        console.log(minusIcon);
         $(minusIcon).click();
 
       } else {
