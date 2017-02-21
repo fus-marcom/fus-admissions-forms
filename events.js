@@ -14,7 +14,19 @@ jQuery( document ).ready(function( $ ) {
     </nav>
     `);
 
-  $('.resultTable').addClass('responsive-table striped');
+  ( function addTableClasses() {
+    $('.resultTable').addClass('responsive-table striped');
+  })();
+
+  function checkForTickets()
+  {
+      if($('.ticketPane')) {
+        replaceTickets();
+      } else {
+        setTimeout( checkDOMChange, 100 );
+      }
+  }
+
 
   // Add class to identify pages
   const pageTitle=  $('h1').text();
@@ -36,7 +48,7 @@ jQuery( document ).ready(function( $ ) {
 
     //Hide default ticket icons
     $inputArrPlus.prev().prev().hide();
-    $inputArrPlus.prev().hide();
+    $inputArrPlus.prev().remove();
     $inputArrPlus.hide();
 
 
@@ -49,13 +61,13 @@ jQuery( document ).ready(function( $ ) {
         //Click minus icon
         let minusIcon = $(`[name="${$(this).attr('ticket-minus-name')}"]`);
         $(minusIcon).click();
-        replaceTickets();
+        checkForTickets();
       } else {
         $(box).attr('checked', 'checked');
         //Click plus icon
         let plusIcon = $(`[name="${$(this).attr('ticket-plus-name')}"]`);
         $(plusIcon).click();
-        replaceTickets();
+        checkForTickets();
       }
 
     });

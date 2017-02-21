@@ -106,6 +106,7 @@ h1 {
 }
 
 form {
+  background-color: #fff;
   padding: 24px 10%;
   border: none;
   box-sizing: border-box;
