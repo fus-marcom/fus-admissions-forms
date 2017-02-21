@@ -33,32 +33,23 @@ jQuery( document ).ready(function( $ ) {
     $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-name=${ticketName} ticket-minus-name=${ticketMinusName} />`);
   });
 
-
-  //Make a loop or map to add correct for attr to labels
-  // $inputArrMinus.map(function(i, ticketInput) {
-  //   let ticketName = $(ticketInput).attr('name');
-  //   let ticketPlusName = $(ticketInput).next().next().attr('name');
-  //   $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-name=${ticketName} ticket-plus-name=${ticketPlusName} />`);
-  // });
-
   //Hide default ticket icons
   $inputArrPlus.prev().prev().hide();
   $inputArrPlus.prev().hide();
   $inputArrPlus.hide();
 
 
-  $('.ticket-box-label').not('[type="checkbox"]:checked+label').click(function() {
+  $('.ticket-box-label').click(function() {
     //remove check
     let boxName = $(this).attr('for');
-    $(`input[name="${boxName}"]`).attr('checked', 'checked');
+    let box = $(`input[name="${boxName}"]`);
+    if ($(box).attr('checked') === 'checked') {
+      $(box).attr('checked', '');
+    } else {
+      $(box).attr('checked', 'checked');
+    }
+
     //trigger click on ticket plus
 
-  });
-
-  $('[type="checkbox"]:checked+label').click(function() {
-    //remove check
-    let boxName = $(this).attr('for');
-    $(`input[name="${boxName}"]`).attr('checked', '');
-    //trigger click on ticket minus
   });
 });
