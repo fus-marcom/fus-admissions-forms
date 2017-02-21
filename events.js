@@ -55,8 +55,6 @@ jQuery( document ).ready(function( $ ) {
       }
     });
 
-    $('.ticket-box-label').not('[ticket-minus-name="undefined"]').
-
     //Hide default ticket icons
     $inputArrPlus.prev().prev().hide();
     $inputArrPlus.prev().remove();
