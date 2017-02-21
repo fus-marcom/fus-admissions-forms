@@ -30,7 +30,7 @@ jQuery( document ).ready(function( $ ) {
   $inputArrPlus.map(function(i, ticketInput) {
     let ticketName = $(ticketInput).attr('name');
     let ticketMinusName = $(ticketInput).prev().prev().attr('name');
-    $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-name=${ticketName} ticket-minus-name=${ticketMinusName} />`);
+    $(ticketInput).after(`<input class="ticket-box" type="checkbox" name="ticket-box-${i}"/><label class="ticket-box-label" for="ticket-box-${i}" ticket-plus-name=${ticketName} ticket-minus-name=${ticketMinusName} />`);
   });
 
   //Hide default ticket icons
@@ -43,13 +43,17 @@ jQuery( document ).ready(function( $ ) {
     //remove check
     let boxName = $(this).attr('for');
     let box = $(`input[name="${boxName}"]`);
-    if ($(box).attr('checked') === 'checked') {
+    if ($(box).attr('checked') === true) {
       $(box).attr('checked', '');
+      //Click minus icon
+      let minusIcon = $(`[name="${$(this).attr('ticket-minus-name')}"]`);
+      $(minusIcon).click();
     } else {
       $(box).attr('checked', 'checked');
+      //Click plus icon
+      let plusIcon = $(`[name="${$(this).attr('ticket-plus-name')}"]`);
+      $(plusIcon).click();
     }
-
-    //trigger click on ticket plus
 
   });
 });
