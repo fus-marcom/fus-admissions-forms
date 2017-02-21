@@ -14,18 +14,7 @@ jQuery( document ).ready(function( $ ) {
     </nav>
     `);
 
-  ( function addTableClasses() {
-    $('.resultTable').addClass('responsive-table striped');
-  })();
 
-  function checkForTickets()
-  {
-      if($('.ticketPane')) {
-        replaceTickets();
-      } else {
-        setTimeout( checkDOMChange, 100 );
-      }
-  }
 
 
   // Add class to identify pages
@@ -36,6 +25,19 @@ jQuery( document ).ready(function( $ ) {
   }
 
   ( function replaceTickets() {
+    ( function addTableClasses() {
+      $('.resultTable').addClass('responsive-table striped');
+    })();
+
+    function checkForTickets()
+    {
+        if($('.ticketPane')) {
+          replaceTickets();
+        } else {
+          setTimeout( checkDOMChange, 100 );
+        }
+    }
+
     let $inputArrMinus = $('input.ticketButtons-lt');
     let $inputArrPlus = $('input.ticketButtons-rt');
 
