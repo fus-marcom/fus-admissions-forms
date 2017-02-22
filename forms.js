@@ -14,7 +14,7 @@ jQuery( document ).ready(function( $ ) {
   //!!!!!!!!!!!!!!!!
   //
 
-  $('textarea').attr('style', 'width: 100% !important');
+  $('textarea, input[type="text"]').attr('style', 'width: 100% !important');
   $('textarea').addClass('materialize-textarea');
 
 

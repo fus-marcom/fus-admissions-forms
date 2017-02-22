@@ -92,7 +92,7 @@ nav {
    width: 100% !important;
  }
 
-body div.wForm {
+div div.wForm {
   max-width: 70%;
   margin: 0 auto;
   padding: 0;
@@ -106,7 +106,7 @@ body div.wForm {
 
 
 
-body .wform form {
+div .wForm form {
   background-color: #fff;
   padding: 24px 10%;
   border: none;
@@ -118,11 +118,11 @@ body .wform form {
 }
 
 @media screen and (max-width: 860px) {
-  body div.wForm {
+  div div.wForm {
     max-width: 100%;
   }
 
-body .wform  form {
+div .wForm  form {
     padding: 24px;
     width: 100%;
     max-width: 600px;
@@ -130,16 +130,20 @@ body .wform  form {
 }
 
 @media screen and (max-width: 600px) {
-  body div.wForm {
+  div div.wForm {
     max-width: 100%;
   }
 
-body .wform  form {
+div .wForm  form {
     width: 90%;
   }
 }
 
-.wForm .inline div.oneField {
+div .wForm .inline div.oneField {
+  width: 100%;
+}
+
+div .wForm .inputWrapper {
   width: 100%;
 }
 
@@ -147,7 +151,7 @@ body .wform  form {
   width: 100%;
 }
 
-.wForm .oneField input {
+div .wForm .oneField input {
   background: none;
   border-top: none;
   border-right: none;
@@ -173,7 +177,7 @@ fieldset legend u b {
   font-weight: 400;
 }
 
-body label {
+div label {
   color: rgba(0, 0, 0, 0.54);
 }
 
@@ -187,7 +191,7 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
   border-bottom: 2px solid #ffc658;
 }
 
-body .wForm textarea {
+div .wForm textarea {
   background: none;
   border: none;
   width: 100% !important;
@@ -198,4 +202,41 @@ body .wForm textarea {
   font-size: 1rem;
   margin: 0 0 20px 0;
   padding: .8rem 0 1.6rem 0;
+}
+
+body div .wForm input[type="submit"] {
+  background: none;
+  border-radius: 2px;
+  background-color: hsla(40, 100%, 56%, 1);
+  box-shadow: none;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  color: #fff !important;
+  margin-top: 16px;
+  -webkit-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  outline-color: initial;
+  outline-style: initial;
+  outline-width: 0px;
+  -webkit-appearance: none;
+}
+
+body div .wForm input[type="submit"]:hover, body div .wForm input[type="submit"]:focus  {
+  background: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: rgba(255, 198, 88, 0.9);
+  color: #fff !important;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
 }
