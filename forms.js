@@ -8,6 +8,11 @@ jQuery( document ).ready(function( $ ) {
     </nav>
     `);
 
+  //
+  //Remove this before going live!!!!!
   $('.wFormTitle').html('Admissions Inquiry');
+  //!!!!!!!!!!!!!!!!
+  //
 
+  
 });
