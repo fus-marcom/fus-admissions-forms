@@ -232,6 +232,7 @@ div .wForm select {
   font-size: 16px;
   color: rgba(0,0,0,0.87);
   font-size: 16px;
+  display: inline-block;
 }
 
 .field_select::before {
