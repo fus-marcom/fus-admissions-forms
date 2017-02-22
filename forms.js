@@ -8,4 +8,6 @@ jQuery( document ).ready(function( $ ) {
     </nav>
     `);
 
+  $('.wFormTitle').html('Admissions Inquiry');
+
 });
