@@ -153,7 +153,7 @@ body .wform  form {
   border-right: none;
   border-left: none;
   border-image: initial;
-  border-bottom: 1px solid rgb(158, 158, 158);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
   border-radius: 0px;
   width: 100%;
 }
@@ -175,4 +175,27 @@ fieldset legend u b {
 
 body label {
   color: rgba(0, 0, 0, 0.54);
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #ffc658;
+  box-shadow: 0 1px 0 0 #ffc658;
+}
+
+[type="checkbox"]:checked+label:before {
+  border-right: 2px solid #ffc658;
+  border-bottom: 2px solid #ffc658;
+}
+
+body .wForm textarea {
+  background: none;
+  border: none;
+  width: 100% !important;
+  height: 3rem !important;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 0;
+  font-size: 1rem;
+  margin: 0 0 20px 0;
+  padding: .8rem 0 1.6rem 0;
 }
