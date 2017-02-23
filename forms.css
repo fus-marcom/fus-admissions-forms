@@ -158,6 +158,7 @@ div .wForm .oneField input {
   border-left: none;
   border-image: initial;
   border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  border-bottom-color: rgba(0, 0, 0, 0.54);
   border-radius: 0px;
   width: 100%;
 }
