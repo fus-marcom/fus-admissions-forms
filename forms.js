@@ -1,3 +1,4 @@
+
 jQuery( document ).ready(function( $ ) {
 
   $('body').prepend(`
@@ -13,6 +14,8 @@ jQuery( document ).ready(function( $ ) {
   $('.wFormTitle').html('Admissions Inquiry');
   //!!!!!!!!!!!!!!!!
   //
+
+  $('head').append('<link rel="shortcut icon" href="https://franciscan.university/favicon.ico">');
 
   $('textarea, input[type="text"]').not('input[style="display:none;"]').attr('style', 'width: 100% !important');
   $('textarea').addClass('materialize-textarea');

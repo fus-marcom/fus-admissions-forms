@@ -14,6 +14,9 @@ jQuery( document ).ready(function( $ ) {
     </nav>
     `);
 
+    $('head').append('<link rel="shortcut icon" href="https://franciscan.university/favicon.ico">');
+
+
   // Add class to identify pages
   const pageTitle=  $('h1').text();
 
