@@ -344,7 +344,7 @@ body .cartstatus2 a, body .cartstatus a {
 
 
 /* Buttons */
-body a.btnAct {
+body a.btnAct, div .cancelBtn {
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   -webkit-border-radius: 2px;
@@ -380,11 +380,80 @@ body a.btnAct {
   -webkit-appearance: none;
 }
 
-body a.btnAct:hover {
+body a.btnAct:hover, div .cancelBtn:hover {
   padding: 8px 16px;
   border: none;
   font-size: 16px;
   background-color: rgba(255, 198, 88, 0.85);
   color: #fff !important;
   box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+}
+
+div .noImgArowRight {
+  display: none;
+}
+
+.event-details .wrapper h3 {
+  background: none !important;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 30px;
+  font-weight: 300;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 16px !important;
+  padding: 0;
+}
+
+.event-details span .helpText {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 25px;
+  font-weight: 300;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 16px !important;
+  margin-bottom: -60px;
+  padding-left: 16px;
+}
+
+.event-details form {
+  padding: 55px 2% 24px 2%;
+}
+
+div form select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.87);
+  font-weight: 300;
+  position: relative;
+  z-index: 2;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  outline-color: initial;
+  outline-style: initial;
+  outline-width: 0px;
+  line-height: 1.4;
+  font-size: 16px;
+  color: rgba(0,0,0,0.87);
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 16px;
+}
+
+.event-details form:nth-of-type(2) {
+  visibility: hidden;
+}
+
+div .cancelBtn {
+  line-height: 14px;
+  margin-top: 0;
+  margin-right: 8px;
 }

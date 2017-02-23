@@ -24,6 +24,10 @@ jQuery( document ).ready(function( $ ) {
     $('html').addClass('event-results');
   }
 
+  if (pageTitle === 'Event Details and Attendees') {
+    $('html').addClass('event-details');
+  }
+
   $('h1').addClass('page-title-heading');
 
   //fix width for event results title heading
