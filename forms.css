@@ -214,6 +214,7 @@ div .wForm select {
 div .wForm select {
   width: 100%;
   -webkit-appearance: none;
+  -moz-appearance: none;
   background: none;
   border: none;
   border-bottom: 1px solid rgba(0,0,0,0.87);
