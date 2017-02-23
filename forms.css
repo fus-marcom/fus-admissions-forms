@@ -207,11 +207,6 @@ div .wForm textarea {
 }
 
 div .wForm select {
-  border-radius: 2px;
-
-}
-
-div .wForm select {
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -251,6 +246,15 @@ div .wForm select {
   line-height: 10px;
   float: right;
 }
+
+div .wForm select[multiple] {
+  height: inherit;
+}
+
+.multiple-select::before {
+  content: none;
+}
+
 
 [type="radio"]:checked+label:after, [type="radio"].with-gap:checked+label:after {
   background-color: hsla(40, 100%, 56%, 1);
