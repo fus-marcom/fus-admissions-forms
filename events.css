@@ -506,6 +506,15 @@ body .finalButton {
   border: none;
 }
 
-body .finalButton form {
+/*body .finalButton form {
   box-shadow: none;
+}*/
+
+body i.parentArrow {
+  vertical-align: middle;
+}
+
+body .attendee {
+  font-weight: 400;
+  padding-top: 0;
 }
