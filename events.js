@@ -129,14 +129,7 @@ jQuery( document ).ready(function( $ ) {
     });
   }
 
-  function toggleArrow (id) {
-    let thisIcon = $('#' + id);
-    if ($(thisIcon).text() === 'keyboard_arrow_right') {
-      $(thisIcon).text('keyboard_arrow_down');
-    } else {
-      $(thisIcon).text('keyboard_arrow_right');
-    }
-  }
+
   switchArrowImagesToFontIcons();
 
 
@@ -145,3 +138,12 @@ jQuery( document ).ready(function( $ ) {
 
 
 });
+
+function toggleArrow (id) {
+  let thisIcon = $('#' + id);
+  if ($(thisIcon).text() === 'keyboard_arrow_right') {
+    $(thisIcon).text('keyboard_arrow_down');
+  } else {
+    $(thisIcon).text('keyboard_arrow_right');
+  }
+}

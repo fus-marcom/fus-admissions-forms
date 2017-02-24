@@ -502,10 +502,10 @@ div .cancelBtn:hover {
   background-color: rgba(33, 65, 42, 0.85);
 }
 
-div .finalButton {
+body .finalButton {
   border: none;
 }
 
-div .finalButton form {
+body .finalButton form {
   box-shadow: none;
 }
