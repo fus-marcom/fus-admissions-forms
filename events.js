@@ -127,10 +127,7 @@ jQuery( document ).ready(function( $ ) {
 
       $(imgArrowIcon).after(`<i id="arrow-icon-${i}" class="material-icons ${imgClasses}" onclick="toggleArrow('arrow-icon-${i}'); ${onClickVal}">${iconName}</i>`);
     });
-
-
   }
-  switchArrowImagesToFontIcons();
 
   function toggleArrow (id) {
     let thisIcon = $('#' + id);
@@ -140,6 +137,9 @@ jQuery( document ).ready(function( $ ) {
       $(thisIcon).text('keyboard_arrow_right');
     }
   }
+  switchArrowImagesToFontIcons();
+
+
 
   $('.finalButton').next().attr('style', 'box-shadow: none;');
 
