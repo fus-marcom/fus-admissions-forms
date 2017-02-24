@@ -344,7 +344,7 @@ body .cartstatus2 a, body .cartstatus a {
 
 
 /* Buttons */
-body a.btnAct, div .cancelBtn {
+body a.btnAct, div .cancelBtn, form input[type="button"] {
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
   -webkit-border-radius: 2px;
@@ -380,9 +380,11 @@ body a.btnAct, div .cancelBtn {
   -webkit-appearance: none;
 }
 
-body a.btnAct:hover, div .cancelBtn:hover {
+body a.btnAct:hover, div .cancelBtn:hover, form input[type="button"]:hover {
   padding: 8px 16px;
   border: none;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   background-color: rgba(255, 198, 88, 0.85);
   color: #fff !important;
@@ -498,4 +500,12 @@ div .cancelBtn {
 
 div .cancelBtn:hover {
   background-color: rgba(33, 65, 42, 0.85);
+}
+
+div .finalButton {
+  border: none;
+}
+
+div .finalButton form {
+  box-shadow: none;
 }

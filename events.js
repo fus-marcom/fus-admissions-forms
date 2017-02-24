@@ -132,5 +132,7 @@ jQuery( document ).ready(function( $ ) {
   }
   switchArrowImagesToFontIcons();
 
+  $('.finalButton').next().attr('style', 'box-shadow: none;');
+
 
 });
