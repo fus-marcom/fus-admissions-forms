@@ -518,3 +518,39 @@ body .attendee {
   font-weight: 400;
   padding-top: 0;
 }
+
+
+/* Your Registered Events Page*/
+
+.registered-events .statusBar>div {
+  width: 100%;
+}
+
+.registered-events .statusBar>div>span {
+  float: right;
+  margin-left: 8px;
+}
+
+.registered-events .statusBar>div>span i {
+  font-size: 40px;
+  color: #21412a;
+}
+
+.registered-events .statusBar form {
+  box-shadow: none;
+  padding: 0;
+  width: initial;
+}
+
+.registered-events .statusBar form a {
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  /*
+  - Make nav taller
+  - shrink icons and button
+  - Make icons and button center over logo
+  - Maybe remove events btn or do something else with it
+  */
+}

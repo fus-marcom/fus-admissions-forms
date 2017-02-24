@@ -32,6 +32,33 @@ jQuery( document ).ready(function( $ ) {
     $('form').eq(1).hide();
   }
 
+  if (pageTitle === 'Your Registered Events') {
+    $('html').addClass('registered-events');
+    $('.statusBar').show();
+    $('.statusBar').attr('style', 'position: absolute; top: 8px; border: none;');
+    $('.statusBar form a').text('Events');
+    replaceHeaderIcons();
+  }
+
+  function replaceHeaderIcons () {
+    let $imgArr = $('.statusBar a img');
+
+    $imgArr.map(function(i, img) {
+      let imgSrc = $(img).attr('src');
+
+      if (imgSrc.indexOf('printer') > 0) {
+        $(img).parent().attr('title', 'Print');
+        $(img).replaceWith(`<i class="material-icons">print</i>`);
+      } else if (imgSrc.indexOf('ical') > 0) {
+        $(img).parent().attr('title', 'Download iCal');
+        $(img).replaceWith(`<i class="material-icons">event</i>`);
+      } else if (imgSrc.indexOf('email') > 0) {
+        $(img).parent().attr('title', 'Email');
+        $(img).replaceWith(`<i class="material-icons">email</i>`);
+      }
+    })
+  }
+
   $('h1').addClass('page-title-heading');
 
   //fix width for event results title heading
@@ -136,6 +163,7 @@ jQuery( document ).ready(function( $ ) {
 
   $('.finalButton').next().attr('style', 'box-shadow: none;');
   $('i.material-icons').parent().attr('style', 'font-size: 23px;');
+  $('h1').attr('style', 'float: none;');
 
 
 });
