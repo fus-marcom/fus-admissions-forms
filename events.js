@@ -108,4 +108,29 @@ jQuery( document ).ready(function( $ ) {
     });
   })();
 
+  function switchArrowImagesToFontIcons () {
+    let $imgArrowIconsArr = $('.parentArrow');
+
+    //Make a loop or map to add correct for attr to labels
+    $imgArrowIconsArr.map(function(i, imgArrowIcon) {
+      let onClickVal = $(imgArrowIcon).attr('onClick');
+      let imgClasses = $(imgArrowIcon).attr('class');
+
+      $(imgArrowIcon).hide();
+
+      $(imgArrowIcon).after(`<i id="arrow-icon-${i}" class="material-icons ${imgClasses}" onclick="toggleArrow('arrow-icon-${i}'); ${onClickVal}">keyboard_arrow_right</i>`);
+    });
+
+    function toggleArrow (id) {
+      let thisIcon = $('#' + id);
+      if ($(thisIcon).text() === 'keyboard_arrow_right') {
+        $(thisIcon).text('keyboard_arrow_down');
+      } else {
+        $(thisIcon).text('keyboard_arrow_right');
+      }
+    }
+  }
+  switchArrowImagesToFontIcons();
+
+
 });
