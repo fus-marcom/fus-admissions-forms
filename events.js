@@ -121,16 +121,18 @@ jQuery( document ).ready(function( $ ) {
       $(imgArrowIcon).after(`<i id="arrow-icon-${i}" class="material-icons ${imgClasses}" onclick="toggleArrow('arrow-icon-${i}'); ${onClickVal}">keyboard_arrow_right</i>`);
     });
 
-    function toggleArrow (id) {
-      let thisIcon = $('#' + id);
-      if ($(thisIcon).text() === 'keyboard_arrow_right') {
-        $(thisIcon).text('keyboard_arrow_down');
-      } else {
-        $(thisIcon).text('keyboard_arrow_right');
-      }
-    }
+
   }
   switchArrowImagesToFontIcons();
+
+  function toggleArrow (id) {
+    let thisIcon = $('#' + id);
+    if ($(thisIcon).text() === 'keyboard_arrow_right') {
+      $(thisIcon).text('keyboard_arrow_down');
+    } else {
+      $(thisIcon).text('keyboard_arrow_right');
+    }
+  }
 
   $('.finalButton').next().attr('style', 'box-shadow: none;');
 
