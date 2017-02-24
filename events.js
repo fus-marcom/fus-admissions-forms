@@ -26,6 +26,7 @@ jQuery( document ).ready(function( $ ) {
 
   if (pageTitle === 'Event Details and Attendees') {
     $('html').addClass('event-details');
+    $('h3').parent().addClass('event-date-container');
   }
 
   $('h1').addClass('page-title-heading');
@@ -103,5 +104,8 @@ jQuery( document ).ready(function( $ ) {
 
     });
   })();
+
+  $('select').parent().addClass('field_select');
+
 
 });
