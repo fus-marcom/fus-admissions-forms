@@ -115,10 +115,17 @@ jQuery( document ).ready(function( $ ) {
     $imgArrowIconsArr.map(function(i, imgArrowIcon) {
       let onClickVal = $(imgArrowIcon).attr('onClick');
       let imgClasses = $(imgArrowIcon).attr('class');
+      let imgSrc = $(imgArrowIcon).attr('src');
+      let isOpen = false;
+      if (imgSrc.indexOf('open') > 0) {
+        isOpen = true;
+      }
+
+      let iconName = isOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_right';
 
       $(imgArrowIcon).hide();
 
-      $(imgArrowIcon).after(`<i id="arrow-icon-${i}" class="material-icons ${imgClasses}" onclick="toggleArrow('arrow-icon-${i}'); ${onClickVal}">keyboard_arrow_right</i>`);
+      $(imgArrowIcon).after(`<i id="arrow-icon-${i}" class="material-icons ${imgClasses}" onclick="toggleArrow('arrow-icon-${i}'); ${onClickVal}">${iconName}</i>`);
     });
 
 
