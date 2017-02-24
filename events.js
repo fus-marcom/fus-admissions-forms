@@ -135,7 +135,7 @@ jQuery( document ).ready(function( $ ) {
 
 
   $('.finalButton').next().attr('style', 'box-shadow: none;');
-  $('form>input>span>i.material-icons').parent().attr('style', 'font-size: 23px; vertical-align: bottom;');
+  $('i.material-icons').parent().attr('style', 'font-size: 23px;');
 
 
 });
