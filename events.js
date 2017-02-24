@@ -38,6 +38,7 @@ jQuery( document ).ready(function( $ ) {
     $('.statusBar').attr('style', 'position: absolute; top: 8px; border: none;');
     $('.statusBar form a').text('Events');
     replaceHeaderIcons();
+    $('.eventList a').html('<i class="material-icons">edit</i>');
   }
 
   function replaceHeaderIcons () {

@@ -546,6 +546,15 @@ body .attendee {
   margin-top: 4px;
 }
 
+.registered-events h1 {
+  margin-bottom: -50px;
+}
+
+.registered-events .eventList a.btnPsv {
+  border: none;
+  background: none;
+}
+
 @media screen and (max-width: 800px) {
   /*
   - Make nav taller
@@ -553,4 +562,29 @@ body .attendee {
   - Make icons and button center over logo
   - Maybe remove events btn or do something else with it
   */
+
+  nav {  background-color: #fff;
+    height: 100px;
+  }
+
+  nav .brand-logo img {
+    margin-top: 28px;
+  }
+
+  .registered-events .statusBar>div>span {
+    float: none;
+    margin-left: 0;
+    display: block;
+    width: 102px;
+    margin: 0 auto;
+    margin-top: -10px;
+  }
+
+  .registered-events .statusBar>div>span i {
+    font-size: 22px;
+  }
+
+  .registered-events .statusBar form {
+    display: none;
+  }
 }
