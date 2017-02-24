@@ -419,6 +419,30 @@ div .noImgArowRight {
   padding: 55px 2% 24px 2%;
 }
 
+@media screen and (max-width: 1200px) {
+  .event-details span .helpText {
+    margin-bottom: 8px;
+    padding-left: 0;
+  }
+
+  .event-details form {
+    padding: 8px 2% 24px 2%;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  h1, .event-details .wrapper h3, .event-details span .helpText {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1, .event-details .wrapper h3, .event-details span .helpText {
+    width: 90%;
+  }
+}
+
 div form select.guestSelect {
   width: 100%;
   -webkit-appearance: none;
