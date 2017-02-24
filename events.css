@@ -419,7 +419,7 @@ div .noImgArowRight {
   padding: 55px 2% 24px 2%;
 }
 
-div form select {
+div form select.guestSelect {
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -445,7 +445,6 @@ div form select {
   font-size: 16px;
   display: inline-block;
   margin-left: 0;
-  margin-top: 16px;
 }
 
 .field_select::before {
@@ -470,4 +469,9 @@ div .cancelBtn {
   line-height: 14px;
   margin-top: 0;
   margin-right: 8px;
+  background-color: #21412a;
+}
+
+div .cancelBtn:hover {
+  background-color: rgba(33, 65, 42, 0.85);
 }

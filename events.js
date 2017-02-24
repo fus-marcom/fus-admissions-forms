@@ -28,6 +28,8 @@ jQuery( document ).ready(function( $ ) {
     $('html').addClass('event-details');
     $('h3').parent().addClass('event-date-container');
     $('select').wrap('<div class="field_select">');
+    $('.cancelBtn').parent().attr('style', 'float: right');
+    $('form').eq(1).hide();
   }
 
   $('h1').addClass('page-title-heading');
