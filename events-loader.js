@@ -38,7 +38,7 @@ if (document.getElementsByTagName('iframe').length > 0) {
  document.head.appendChild(materialCss);
 
   var eventJs = document.createElement("script");
- eventJs.setAttribute('src', 'https://jesserweigel.github.io/fus-admissions-forms/events.js');
+ eventJs.setAttribute('src', 'https://jesserweigel.github.io/fus-admissions-forms/dist/events.js');
  eventJs.setAttribute('type', 'text/javascript');
 
 
