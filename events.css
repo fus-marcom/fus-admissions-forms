@@ -72,6 +72,7 @@ body {
   font-family: 'Roboto', sans-serif !important;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.87);
+  padding-bottom: 100px;
 }
 
 nav {
@@ -274,6 +275,24 @@ body .cartstatus2, body .cartstatus {
 
 body .cartstatus2 a, body .cartstatus a {
   float: left;
+}
+
+.event-results h3 {
+  color: rgba(0, 0, 0, 0.54) !important;
+  font-weight: 300;
+  margin-top: 16px !important;
+  max-width: 70%;
+  margin: 0 auto;
+  font-size: 24px;
+  padding-left: 0 !important;
+}
+
+.event-results h3 a {
+  color: #039be5 !important;
+}
+
+.event-results h3 a:nth-of-type(2); {
+  font-size: 14px;
 }
 
 @media screen and (max-width: 860px) {
@@ -487,6 +506,21 @@ div form select.guestSelect {
   float: right;
 }
 
+.event-details .field_select::before {
+  content: "\25bc";
+  color: initial;
+  position: relative;
+  right: 2px;
+  top: 29px;
+  bottom: 0;
+  height: 10px;
+  margin: auto 0;
+  font-size: 10px;
+  line-height: 10px;
+  float: right;
+  margin-right: -100px;
+}
+
 .event-details form:nth-of-type(2) {
   visibility: hidden;
 }
@@ -517,6 +551,46 @@ body i.parentArrow {
 body .attendee {
   font-weight: 400;
   padding-top: 0;
+}
+
+.event-details table.questions {
+  margin: 0;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.54);
+  border-left: solid 2px #ffc658;
+  margin-top: 16px;
+}
+
+.event-details table.questions tbody {
+  white-space: normal;
+}
+
+.event-details table.questions tbody select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(0,0,0,0.87);
+  font-weight: 300;
+  position: relative;
+  z-index: 2;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  outline-color: initial;
+  outline-style: initial;
+  outline-width: 0px;
+  line-height: 1.4;
+  font-size: 16px;
+  color: rgba(0,0,0,0.87);
+  font-size: 16px;
+  display: inline-block;
+  margin-left: 0;
 }
 
 

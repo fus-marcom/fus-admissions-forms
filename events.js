@@ -30,6 +30,7 @@ jQuery( document ).ready(function( $ ) {
     $('select').wrap('<div class="field_select">');
     $('.cancelBtn').parent().attr('style', 'float: right');
     $('form').eq(1).hide();
+    $('table.questions').addClass('responsive-table');
   }
 
   if (pageTitle === 'Your Registered Events') {
