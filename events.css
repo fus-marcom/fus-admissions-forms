@@ -629,10 +629,13 @@ body .attendee {
   box-shadow: none;
   padding: 0;
   width: initial;
+  background-color: transparent;
+  float: right;
 }
 
 .registered-events .statusBar form a {
   margin-top: 4px;
+  float: right;
 }
 
 .registered-events h1 {
