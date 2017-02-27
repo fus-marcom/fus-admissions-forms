@@ -643,6 +643,14 @@ body .attendee {
   background: none;
 }
 
+.registered-events .parentEventESQs .question {
+  padding-left: 8px;
+  background-color: transparent;
+  font-size: 14px;
+  border-left: solid 2px #ffc658;
+  color: rgba(0, 0, 0, 0.54);
+}
+
 @media screen and (max-width: 800px) {
   /*
   - Make nav taller
@@ -679,4 +687,5 @@ body .attendee {
   .registered-events .statusBar form {
     display: none;
   }
+
 }
