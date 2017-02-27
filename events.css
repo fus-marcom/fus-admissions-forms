@@ -73,6 +73,7 @@ body {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.87);
   padding-bottom: 100px;
+  margin-bottom: 100px;
 }
 
 nav {
@@ -649,10 +650,6 @@ body .attendee {
   font-size: 14px;
   border-left: solid 2px #ffc658;
   color: rgba(0, 0, 0, 0.54);
-}
-
-.registered-events form:last-of-type {
-  visibility: hidden;
 }
 
 @media screen and (max-width: 800px) {

@@ -41,6 +41,7 @@ jQuery( document ).ready(function( $ ) {
     replaceHeaderIcons();
     $('.eventList a').html('<i class="material-icons">edit</i>');
     $('.eventList a').attr('title', 'Edit');
+    $('.form').last().attr('style', 'visibility: hidden');
   }
 
   function replaceHeaderIcons () {

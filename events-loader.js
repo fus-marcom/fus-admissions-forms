@@ -1,5 +1,13 @@
 //This gets pasted into the Events Custom Code Detail javascript area.
 
+//Stops mobile redirect
+Object.defineProperties(window, {
+  redirToMobile: {
+    value: function() {return false},
+    enumerable: true
+  }
+});
+
 function loadNewStyles() {
 if (document.getElementsByTagName('iframe').length > 0) {
  var formIframe = document.getElementsByTagName('iframe')[0];
