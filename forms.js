@@ -9,12 +9,6 @@ jQuery( document ).ready(function( $ ) {
     </nav>
     `);
 
-  //
-  //Remove this before going live!!!!!
-  $('.wFormTitle').html('Admissions Inquiry');
-  //!!!!!!!!!!!!!!!!
-  //
-
   $('head').append('<link rel="shortcut icon" href="https://franciscan.university/favicon.ico">');
 
   $('textarea, input[type="text"]').not('input[style="display:none;"]').attr('style', 'width: 100% !important');
