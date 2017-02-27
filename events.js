@@ -39,6 +39,7 @@ jQuery( document ).ready(function( $ ) {
     $('.statusBar form a').text('Events');
     replaceHeaderIcons();
     $('.eventList a').html('<i class="material-icons">edit</i>');
+    $('.eventList a').attr('title', 'Edit');
   }
 
   function replaceHeaderIcons () {
