@@ -565,6 +565,10 @@ body .attendee {
   white-space: normal;
 }
 
+.event-details table.questions tbody tr {
+  width: 100%;
+}
+
 .event-details table.questions tbody select {
   width: 100%;
   -webkit-appearance: none;
@@ -591,6 +595,10 @@ body .attendee {
   font-size: 16px;
   display: inline-block;
   margin-left: 0;
+}
+
+.event-details table.questions tbody .field_select::before {
+  margin-right: 0;
 }
 
 
