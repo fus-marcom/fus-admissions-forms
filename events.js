@@ -75,6 +75,9 @@ jQuery( document ).ready(function( $ ) {
   ( function replaceTickets() {
     console.log('run replaceTickets');
 
+    $('.event-results .resultsHeader:nth-of-type(4)>div').html('Attending');
+
+
     function addTableClasses() {
       $('.resultTable').addClass('responsive-table striped');
     }

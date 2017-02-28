@@ -297,6 +297,10 @@ body .cartstatus2 a, body .cartstatus a {
 }
 
 @media only screen and (max-width: 992px) {
+  .event-results table.responsive-table thead tr {
+    border: none;
+  }
+
   .event-results table.responsive-table tbody tr {
     max-width: 300px;
     border: none;
