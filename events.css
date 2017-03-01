@@ -89,7 +89,7 @@ nav {
  }
 
  /* Preloader */
- #LoadingImage div:first-of-type {
+ #LoadingImage > div:first-of-type {
    background-color: #fff !important;
  }
 
