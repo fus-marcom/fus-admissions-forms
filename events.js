@@ -16,7 +16,6 @@ jQuery( document ).ready(function( $ ) {
 
     $('head').append('<link rel="shortcut icon" href="https://franciscan.university/favicon.ico">');
 
-
   // Add class to identify pages
   const pageTitle=  $('h1').text();
 
@@ -182,4 +181,55 @@ function toggleArrow (id) {
   } else {
     $(thisIcon).text('keyboard_arrow_right');
   }
+
+
+  function updatePreloader() {
+    $('#LoadingImage img').hide();
+    $('#LoadingImage img').before(`
+      <div class="preloader-wrapper big active">
+         <div class="spinner-layer spinner-blue">
+           <div class="circle-clipper left">
+             <div class="circle"></div>
+           </div><div class="gap-patch">
+             <div class="circle"></div>
+           </div><div class="circle-clipper right">
+             <div class="circle"></div>
+           </div>
+         </div>
+
+         <div class="spinner-layer spinner-red">
+           <div class="circle-clipper left">
+             <div class="circle"></div>
+           </div><div class="gap-patch">
+             <div class="circle"></div>
+           </div><div class="circle-clipper right">
+             <div class="circle"></div>
+           </div>
+         </div>
+
+         <div class="spinner-layer spinner-yellow">
+           <div class="circle-clipper left">
+             <div class="circle"></div>
+           </div><div class="gap-patch">
+             <div class="circle"></div>
+           </div><div class="circle-clipper right">
+             <div class="circle"></div>
+           </div>
+         </div>
+
+         <div class="spinner-layer spinner-green">
+           <div class="circle-clipper left">
+             <div class="circle"></div>
+           </div><div class="gap-patch">
+             <div class="circle"></div>
+           </div><div class="circle-clipper right">
+             <div class="circle"></div>
+           </div>
+         </div>
+       </div>
+      `);
+  }
+
+  updatePreloader();
+
 }

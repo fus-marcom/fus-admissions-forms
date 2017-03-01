@@ -88,6 +88,10 @@ nav {
    margin-top: 5px;
  }
 
+ /* Preloader */
+ #LoadingImage div:first-of-type {
+   background-color: #fff !important;
+ }
 
 h1 {
   color: rgba(0, 0, 0, 0.87) !important;
