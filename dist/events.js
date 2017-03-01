@@ -157,6 +157,13 @@ jQuery(document).ready(function ($) {
   $('.finalButton').next().attr('style', 'box-shadow: none;');
   $('i.material-icons').parent().attr('style', 'font-size: 23px;');
   $('h1').attr('style', 'float: none;');
+
+  function updatePreloader() {
+    $('#LoadingImage img').hide();
+    $('#LoadingImage img').before('\n      <div class="preloader-wrapper big active">\n         <div class="spinner-layer spinner-blue">\n           <div class="circle-clipper left">\n             <div class="circle"></div>\n           </div><div class="gap-patch">\n             <div class="circle"></div>\n           </div><div class="circle-clipper right">\n             <div class="circle"></div>\n           </div>\n         </div>\n\n         <div class="spinner-layer spinner-red">\n           <div class="circle-clipper left">\n             <div class="circle"></div>\n           </div><div class="gap-patch">\n             <div class="circle"></div>\n           </div><div class="circle-clipper right">\n             <div class="circle"></div>\n           </div>\n         </div>\n\n         <div class="spinner-layer spinner-yellow">\n           <div class="circle-clipper left">\n             <div class="circle"></div>\n           </div><div class="gap-patch">\n             <div class="circle"></div>\n           </div><div class="circle-clipper right">\n             <div class="circle"></div>\n           </div>\n         </div>\n\n         <div class="spinner-layer spinner-green">\n           <div class="circle-clipper left">\n             <div class="circle"></div>\n           </div><div class="gap-patch">\n             <div class="circle"></div>\n           </div><div class="circle-clipper right">\n             <div class="circle"></div>\n           </div>\n         </div>\n       </div>\n      ');
+  }
+
+  updatePreloader();
 });
 
 function toggleArrow(id) {
@@ -166,11 +173,4 @@ function toggleArrow(id) {
   } else {
     $(thisIcon).text('keyboard_arrow_right');
   }
-
-  function updatePreloader() {
-    $('#LoadingImage img').hide();
-    $('#LoadingImage img').before('\n      <div class="preloader-wrapper big active">\n         <div class="spinner-layer spinner-blue">\n           <div class="circle-clipper left">\n             <div class="circle"></div>\n           </div><div class="gap-patch">\n             <div class="circle"></div>\n           </div><div class="circle-clipper right">\n             <div class="circle"></div>\n           </div>\n         </div>\n\n         <div class="spinner-layer spinner-red">\n           <div class="circle-clipper left">\n             <div class="circle"></div>\n           </div><div class="gap-patch">\n             <div class="circle"></div>\n           </div><div class="circle-clipper right">\n             <div class="circle"></div>\n           </div>\n         </div>\n\n         <div class="spinner-layer spinner-yellow">\n           <div class="circle-clipper left">\n             <div class="circle"></div>\n           </div><div class="gap-patch">\n             <div class="circle"></div>\n           </div><div class="circle-clipper right">\n             <div class="circle"></div>\n           </div>\n         </div>\n\n         <div class="spinner-layer spinner-green">\n           <div class="circle-clipper left">\n             <div class="circle"></div>\n           </div><div class="gap-patch">\n             <div class="circle"></div>\n           </div><div class="circle-clipper right">\n             <div class="circle"></div>\n           </div>\n         </div>\n       </div>\n      ');
-  }
-
-  updatePreloader();
 }

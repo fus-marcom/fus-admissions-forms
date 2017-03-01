@@ -171,18 +171,6 @@ jQuery( document ).ready(function( $ ) {
   $('i.material-icons').parent().attr('style', 'font-size: 23px;');
   $('h1').attr('style', 'float: none;');
 
-
-});
-
-function toggleArrow (id) {
-  let thisIcon = $('#' + id);
-  if ($(thisIcon).text() === 'keyboard_arrow_right') {
-    $(thisIcon).text('keyboard_arrow_down');
-  } else {
-    $(thisIcon).text('keyboard_arrow_right');
-  }
-
-
   function updatePreloader() {
     $('#LoadingImage img').hide();
     $('#LoadingImage img').before(`
@@ -231,5 +219,16 @@ function toggleArrow (id) {
   }
 
   updatePreloader();
+
+
+});
+
+function toggleArrow (id) {
+  let thisIcon = $('#' + id);
+  if ($(thisIcon).text() === 'keyboard_arrow_right') {
+    $(thisIcon).text('keyboard_arrow_down');
+  } else {
+    $(thisIcon).text('keyboard_arrow_right');
+  }
 
 }
