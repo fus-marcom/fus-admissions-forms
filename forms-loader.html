@@ -1,0 +1,48 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+<link rel="stylesheet" href="https://jesserweigel.github.io/fus-admissions-forms/forms.css">
+
+<!--
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+-->
+
+<script type="text/javascript">
+
+      jQuery( document ).ready(function( $ ) {
+
+    $('body').prepend(`
+    <nav>
+     <div class="nav-wrapper">
+       <a href="#" class="brand-logo center"><img class="responsive-img" src="https://franciscan.university/img/side-nav-logo.jpg" /></a>
+     </div>
+    </nav>
+    `);
+
+          $('head').append('<link rel="shortcut icon" href="https://franciscan.university/favicon.ico">');
+
+
+  //
+  //Remove this before going live!!!!!
+  $('.wFormTitle').html('Admissions Inquiry');
+  //!!!!!!!!!!!!!!!!
+  //
+
+  $('textarea, input[type="text"]').not('input[style="display:none;"]').attr('style', 'width: 100% !important');
+  $('textarea').addClass('materialize-textarea');
+  $('select').parent().addClass('field_select');
+          $('select[multiple]').parent().addClass('multiple-select');
+
+
+
+});
+
+
+     var metaViewport = document.createElement("meta");
+  metaViewport.setAttribute('content', 'width=device-width,initial-scale=1');
+  metaViewport.setAttribute('name', 'viewport');
+
+  document.head.appendChild(metaViewport);
+
+    </script>
