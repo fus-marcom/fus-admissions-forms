@@ -4,10 +4,6 @@
 
 <link rel="stylesheet" href="https://jesserweigel.github.io/fus-admissions-forms/forms.css">
 
-<!--
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
--->
-
 <script type="text/javascript">
 
       jQuery( document ).ready(function( $ ) {
@@ -22,12 +18,9 @@
 
           $('head').append('<link rel="shortcut icon" href="https://franciscan.university/favicon.ico">');
 
+  // Change this to whatever title the form should have
+  $('.wFormTitle').html('Admissions Visit');
 
-  //
-  //Remove this before going live!!!!!
-  $('.wFormTitle').html('Admissions Inquiry');
-  //!!!!!!!!!!!!!!!!
-  //
 
   $('textarea, input[type="text"]').not('input[style="display:none;"]').attr('style', 'width: 100% !important');
   $('textarea').addClass('materialize-textarea');
@@ -46,3 +39,16 @@
   document.head.appendChild(metaViewport);
 
     </script>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m4 offset-m4">
+      <div class="card">
+        <p class="flow-text">
+          Thank you for your interest in Franciscan University. Our Admissions Team will be reaching out to you shortly. May God bless you!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
