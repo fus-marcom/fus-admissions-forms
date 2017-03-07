@@ -105,6 +105,30 @@ h1 {
   display: none;
 }
 
+.error-text {
+  color: #F44336 !important;
+  background: none !important;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 16px !important;
+  padding: 0;
+}
+
+@media screen and (max-width: 860px) {
+  .error-text {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .error-text {
+    width: 90%;
+  }
+}
+
 .centerPane {
   margin: 0 auto;
   padding-top: 16px;

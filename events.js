@@ -220,6 +220,10 @@ jQuery( document ).ready(function( $ ) {
 
   updatePreloader();
 
+  //Style error text
+  $('span > div[style="color:red;"]').addClass('error-text');
+
+
 
 });
 
