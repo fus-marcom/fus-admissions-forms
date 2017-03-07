@@ -1,0 +1,54 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+<link rel="stylesheet" href="https://jesserweigel.github.io/fus-admissions-forms/forms.css">
+
+<script type="text/javascript">
+
+      jQuery( document ).ready(function( $ ) {
+
+    $('body').prepend(`
+    <nav>
+     <div class="nav-wrapper">
+       <a href="#" class="brand-logo center"><img class="responsive-img" src="https://franciscan.university/img/side-nav-logo.jpg" /></a>
+     </div>
+    </nav>
+    `);
+
+          $('head').append('<link rel="shortcut icon" href="https://franciscan.university/favicon.ico">');
+
+  // Change this to whatever title the form should have
+  $('.wFormTitle').html('Admissions Visit');
+
+
+  $('textarea, input[type="text"]').not('input[style="display:none;"]').attr('style', 'width: 100% !important');
+  $('textarea').addClass('materialize-textarea');
+  $('select').parent().addClass('field_select');
+          $('select[multiple]').parent().addClass('multiple-select');
+
+
+
+});
+
+
+     var metaViewport = document.createElement("meta");
+  metaViewport.setAttribute('content', 'width=device-width,initial-scale=1');
+  metaViewport.setAttribute('name', 'viewport');
+
+  document.head.appendChild(metaViewport);
+
+    </script>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m4 offset-m4">
+      <div class="card">
+        <p class="flow-text">
+          Thank you for your interest in Franciscan University. Our Admissions Team will be reaching out to you shortly. May God bless you!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

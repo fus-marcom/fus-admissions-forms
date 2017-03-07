@@ -98,6 +98,10 @@ div div.wForm {
   padding: 0;
 }
 
+.wFormContainer {
+  border: none;
+}
+
  .wFormContainer .wFormTitle {
   border: none;
   font-family: 'Roboto', sans-serif !important;

@@ -93,6 +93,10 @@ nav {
    background-color: #fff !important;
  }
 
+ .wFormContainer {
+   border: none;
+ }
+
 h1 {
   color: rgba(0, 0, 0, 0.87) !important;
   font-weight: 300;
