@@ -1,5 +1,3 @@
-console.log('w007!!!1');
-
 // Use jQuery here
 jQuery( document ).ready(function( $ ) {
   $('link[href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"]').appendTo('head');
