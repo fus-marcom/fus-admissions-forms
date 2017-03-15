@@ -1,7 +1,5 @@
 'use strict';
 
-console.log('w007!!!1');
-
 // Use jQuery here
 jQuery(document).ready(function ($) {
   $('link[href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"]').appendTo('head');
@@ -15,12 +13,19 @@ jQuery(document).ready(function ($) {
   // Add class to identify pages
   var pageTitle = $('h1').text();
 
+  if (pageTitle === 'Search Events') {
+    $('html').addClass('search-events');
+    $('h1').text('Visit Campus');
+  }
+
   if (pageTitle === 'Event Search Results') {
     $('html').addClass('event-results');
+    $('h1').text('Search Results');
   }
 
   if (pageTitle === 'Event Details and Attendees') {
     $('html').addClass('event-details');
+    $('h1').text('Details and Attendees');
     $('h3').parent().addClass('event-date-container');
     $('select').wrap('<div class="field_select">');
     $('.cancelBtn').parent().attr('style', 'float: right');
@@ -30,6 +35,7 @@ jQuery(document).ready(function ($) {
 
   if (pageTitle === 'Your Registered Events') {
     $('html').addClass('registered-events');
+    $('h1').text('Your Registered Visits');
     $('.statusBar').show();
     $('.statusBar').attr('style', 'position: absolute; top: 8px; border: none;');
     $('.statusBar form a').text('Events');
@@ -164,6 +170,9 @@ jQuery(document).ready(function ($) {
   }
 
   updatePreloader();
+
+  //Style error text
+  $('span > div[style="color:red;"]').addClass('error-text');
 });
 
 function toggleArrow(id) {
