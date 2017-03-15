@@ -27,7 +27,18 @@
   $('select').parent().addClass('field_select');
           $('select[multiple]').parent().addClass('multiple-select');
 
-
+  //Strip begininning and trailing whitespace from name Inputs
+  $('input[type="text"]').change(function(){
+    trim(this);
+  });
+  // Source: http://stackoverflow.com/questions/10747119/how-to-trim-a-space-at-the-start-and-end-of-textbox
+  function trim(el) {
+    el.value = el.value.
+    replace(/(^\s*)|(\s*$)/gi, ""). // removes leading and trailing spaces
+    replace(/[ ]{2,}/gi, " "). // replaces multiple spaces with one space
+    replace(/\n +/, "\n"); // Removes spaces after newlines
+    return;
+  }
 
 });
 
