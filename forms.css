@@ -102,6 +102,10 @@ div div.wForm {
   border: none;
 }
 
+.wFormContainer > div.errorMessage {
+  display: none;
+}
+
  .wFormContainer .wFormTitle {
   border: none;
   font-family: 'Roboto', sans-serif !important;
