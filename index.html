@@ -1,1 +1,772 @@
-<h1> Hello world!</h1>
+<!-- FORM: HEAD SECTION -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <!-- <link href="https://franciscan.tfaforms.net/form-builder/4.3.0/css/wforms-layout.css" rel="stylesheet" type="text/css" /> -->
+    <!--[if IE 8]>
+    <link href="https://franciscan.tfaforms.net/form-builder/4.3.0/css/wforms-layout-ie8.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 7]>
+    <link href="https://franciscan.tfaforms.net/form-builder/4.3.0/css/wforms-layout-ie7.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+    <!--[if IE 6]>
+    <link href="https://franciscan.tfaforms.net/form-builder/4.3.0/css/wforms-layout-ie6.css" rel="stylesheet" type="text/css" />
+    <![endif]-->
+
+    <!-- <link href="https://franciscan.tfaforms.net/themes/get/6" rel="stylesheet" type="text/css" />
+    <link href="https://franciscan.tfaforms.net/form-builder/4.3.0/css/wforms-jsonly.css" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" /> -->
+    <script type="text/javascript" src="https://franciscan.tfaforms.net/wForms/3.10/js/wforms.js"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://franciscan.tfaforms.net/wForms/3.10/js/localization-en_US.js"></script>
+
+<!-- FORM: BODY SECTION -->
+<div class="wFormContainer" style="max-width: 600px; width:auto;" >
+  <div class=""><div class="wForm" id="tfa_0-WRPR" dir="ltr">
+<div class="codesection" id="code-tfa_0">    <script type="text/javascript">
+
+      $(document).ready(function() {
+        makeSchoolpicker("369");
+        verifyFieldMatch(20,21) ;
+      });
+
+    </script>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+<link rel="stylesheet" href="https://jesserweigel.github.io/fus-admissions-forms/forms.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+
+      jQuery( document ).ready(function( $ ) {
+
+    $('body').prepend(`
+    <nav>
+     <div class="nav-wrapper">
+       <a href="#" class="brand-logo center"><img class="responsive-img" src="https://franciscan.university/img/side-nav-logo.jpg" /></a>
+     </div>
+    </nav>
+    `);
+
+          $('head').append('<link rel="shortcut icon" href="https://franciscan.university/favicon.ico">');
+
+
+  //
+  //Remove this before going live!!!!!
+  $('.wFormTitle').html('Admissions Inquiry');
+  //!!!!!!!!!!!!!!!!
+  //
+
+  $('textarea, input[type="text"]').not('input[style="display:none;"]').attr('style', 'width: 100% !important');
+  $('textarea').addClass('materialize-textarea');
+  $('select').parent().addClass('field_select');
+          $('select[multiple]').parent().addClass('multiple-select');
+
+
+
+});
+
+
+     var metaViewport = document.createElement("meta");
+  metaViewport.setAttribute('content', 'width=device-width,initial-scale=1');
+  metaViewport.setAttribute('name', 'viewport');
+
+  document.head.appendChild(metaViewport);
+
+
+
+
+
+
+
+
+    </script>
+<!-- Hotjar Tracking Code for https://franciscan.secure.force.com/form?formid=217723 -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:454822,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script></div>
+<h3 class="wFormTitle" id="tfa_0-T"><img src="//franciscan.tfaforms.net/forms/get_image/3/e8a2c764c55360b1a6041b866ce1bab4-visittitle.png" alt="inq" style="max-width: 100%;"></h3>
+<form method="post" action="https://franciscan.tfaforms.net/responses/processor" class="hintsBelow labelsAbove" id="tfa_0">
+<fieldset id="tfa_23" class="section inline">
+<div id="tfa_416" class="section column group">
+<div id="tfa_11-D" class="oneField     ">
+<label id="tfa_11-L" for="tfa_11" class="label preField reqMark">First Name </label><br><div class="inputWrapper"><input type="text" id="tfa_11" name="tfa_11" value="" placeholder="" maxlength="40" title="First Name " class="required"></div>
+</div>
+<div id="tfa_12-D" class="oneField     ">
+<label id="tfa_12-L" for="tfa_12" class="label preField reqMark">Last Name </label><br><div class="inputWrapper"><input type="text" id="tfa_12" name="tfa_12" value="" placeholder="" maxlength="80" title="Last Name " class="required"></div>
+</div>
+<div id="tfa_760-D" class="oneField     ">
+<label id="tfa_760-L" for="tfa_760" class="label preField ">Preferred Name </label><br><div class="inputWrapper"><input type="text" id="tfa_760" name="tfa_760" value="" placeholder="" maxlength="80" title="Preferred Name " class=""></div>
+</div>
+<div id="tfa_762-D" class="oneField     ">
+<label id="tfa_762-L" for="tfa_762" class="label preField ">Middle Name </label><br><div class="inputWrapper"><input type="text" id="tfa_762" name="tfa_762" value="" placeholder="" maxlength="80" title="Middle Name " class=""></div>
+</div>
+</div>
+<div id="tfa_20-D" class="oneField     ">
+<label id="tfa_20-L" for="tfa_20" class="label preField reqMark">Email</label><br><div class="inputWrapper"><input type="text" id="tfa_20" name="tfa_20" value="" placeholder="" maxlength="80" title="Email" class="validate-email calc-emailA required"></div>
+</div>
+<div id="tfa_21-D" class="oneField     ">
+<label id="tfa_21-L" for="tfa_21" class="label preField reqMark">Verify Email </label><br><div class="inputWrapper"><input type="text" id="tfa_21" name="tfa_21" value="" placeholder="" maxlength="80" title="Verify Email " class="calc-emailB required"></div>
+</div>
+<div id="tfa_24-D" class="oneField     ">
+<label id="tfa_24-L" for="tfa_24" class="label preField reqMark">Street Address </label><br><div class="inputWrapper"><textarea id="tfa_24" name="tfa_24" title="Street Address " class="required"></textarea></div>
+</div>
+<div id="tfa_25-D" class="oneField     ">
+<label id="tfa_25-L" for="tfa_25" class="label preField reqMark">City</label><br><div class="inputWrapper"><input type="text" id="tfa_25" name="tfa_25" value="" placeholder="" maxlength="40" title="City" class="required"></div>
+</div>
+<div id="tfa_26-D" class="oneField     ">
+<label id="tfa_26-L" for="tfa_26" class="label preField reqMark">State</label><br><div class="inputWrapper"><select id="tfa_26" name="tfa_26" title="State" class="required"><option value="">Please select...</option>
+<option value="tfa_419" id="tfa_419" class="">Alabama</option>
+<option value="tfa_420" id="tfa_420" class="">Alaska</option>
+<option value="tfa_421" id="tfa_421" class="">Alberta</option>
+<option value="tfa_422" id="tfa_422" class="">American Samoa</option>
+<option value="tfa_423" id="tfa_423" class="">Arizona</option>
+<option value="tfa_424" id="tfa_424" class="">Arkansas</option>
+<option value="tfa_425" id="tfa_425" class="">British Columbia</option>
+<option value="tfa_426" id="tfa_426" class="">California</option>
+<option value="tfa_427" id="tfa_427" class="">Colorado</option>
+<option value="tfa_428" id="tfa_428" class="">Connecticut</option>
+<option value="tfa_429" id="tfa_429" class="">Delaware</option>
+<option value="tfa_430" id="tfa_430" class="">District of Columbia</option>
+<option value="tfa_431" id="tfa_431" class="">Florida</option>
+<option value="tfa_432" id="tfa_432" class="">Georgia</option>
+<option value="tfa_433" id="tfa_433" class="">Guam</option>
+<option value="tfa_434" id="tfa_434" class="">Hawaii</option>
+<option value="tfa_435" id="tfa_435" class="">Idaho</option>
+<option value="tfa_436" id="tfa_436" class="">Illinois</option>
+<option value="tfa_437" id="tfa_437" class="">Indiana</option>
+<option value="tfa_438" id="tfa_438" class="">Iowa</option>
+<option value="tfa_439" id="tfa_439" class="">Kansas</option>
+<option value="tfa_440" id="tfa_440" class="">Kentucky</option>
+<option value="tfa_441" id="tfa_441" class="">Louisiana</option>
+<option value="tfa_442" id="tfa_442" class="">Maine</option>
+<option value="tfa_443" id="tfa_443" class="">Manitoba</option>
+<option value="tfa_444" id="tfa_444" class="">Marianna Islands</option>
+<option value="tfa_445" id="tfa_445" class="">Marshall Islands</option>
+<option value="tfa_446" id="tfa_446" class="">Maryland</option>
+<option value="tfa_447" id="tfa_447" class="">Massachusetts</option>
+<option value="tfa_448" id="tfa_448" class="">Michigan</option>
+<option value="tfa_449" id="tfa_449" class="">Micronesia</option>
+<option value="tfa_450" id="tfa_450" class="">Minnesota</option>
+<option value="tfa_451" id="tfa_451" class="">Minor Outlaying Islands</option>
+<option value="tfa_452" id="tfa_452" class="">Mississippi</option>
+<option value="tfa_453" id="tfa_453" class="">Missouri</option>
+<option value="tfa_454" id="tfa_454" class="">Montana</option>
+<option value="tfa_455" id="tfa_455" class="">Nebraska</option>
+<option value="tfa_456" id="tfa_456" class="">Nevada</option>
+<option value="tfa_457" id="tfa_457" class="">New Brunswick</option>
+<option value="tfa_458" id="tfa_458" class="">Newfoundland and Labrador</option>
+<option value="tfa_459" id="tfa_459" class="">New Hampshire</option>
+<option value="tfa_460" id="tfa_460" class="">New Jersey</option>
+<option value="tfa_461" id="tfa_461" class="">New Mexico</option>
+<option value="tfa_462" id="tfa_462" class="">New York</option>
+<option value="tfa_463" id="tfa_463" class="">North Carolina</option>
+<option value="tfa_464" id="tfa_464" class="">North Dakota</option>
+<option value="tfa_465" id="tfa_465" class="">Northwest Territories</option>
+<option value="tfa_466" id="tfa_466" class="">Nova Scotia</option>
+<option value="tfa_467" id="tfa_467" class="">Nunavut</option>
+<option value="tfa_468" id="tfa_468" class="">Ohio</option>
+<option value="tfa_469" id="tfa_469" class="">Oklahoma</option>
+<option value="tfa_470" id="tfa_470" class="">Ontario</option>
+<option value="tfa_471" id="tfa_471" class="">Oregon</option>
+<option value="tfa_472" id="tfa_472" class="">Palau</option>
+<option value="tfa_473" id="tfa_473" class="">Pennsylvania</option>
+<option value="tfa_474" id="tfa_474" class="">Prince Edward Island</option>
+<option value="tfa_475" id="tfa_475" class="">Puerto Rico</option>
+<option value="tfa_476" id="tfa_476" class="">Quebec</option>
+<option value="tfa_477" id="tfa_477" class="">Rhode Island</option>
+<option value="tfa_478" id="tfa_478" class="">Saskatchewan</option>
+<option value="tfa_479" id="tfa_479" class="">South Carolina</option>
+<option value="tfa_480" id="tfa_480" class="">South Dakota</option>
+<option value="tfa_481" id="tfa_481" class="">Tennessee</option>
+<option value="tfa_482" id="tfa_482" class="">Texas</option>
+<option value="tfa_483" id="tfa_483" class="">Utah</option>
+<option value="tfa_484" id="tfa_484" class="">Vermont</option>
+<option value="tfa_485" id="tfa_485" class="">Virginia</option>
+<option value="tfa_486" id="tfa_486" class="">Virgin Islands</option>
+<option value="tfa_487" id="tfa_487" class="">Washington</option>
+<option value="tfa_488" id="tfa_488" class="">West Virginia</option>
+<option value="tfa_489" id="tfa_489" class="">Wisconsin</option>
+<option value="tfa_490" id="tfa_490" class="">Wyoming</option>
+<option value="tfa_491" id="tfa_491" class="">Yukon</option></select></div>
+</div>
+<div id="tfa_84-D" class="oneField     ">
+<label id="tfa_84-L" for="tfa_84" class="label preField reqMark">Zip/Postal Code </label><br><div class="inputWrapper"><input type="text" id="tfa_84" name="tfa_84" value="" placeholder="" maxlength="10" title="Zip/Postal Code " class="required"></div>
+</div>
+<div id="tfa_375-D" class="oneField     ">
+<label id="tfa_375-L" for="tfa_375" class="label preField reqMark">Mobile Phone </label><br><div class="inputWrapper"><input type="text" id="tfa_375" name="tfa_375" value="" placeholder="" autoformat="(###) ###-####" title="Mobile Phone " class="validate-custom /^([\(]{1}[0-9]{3}[\)]{1}[\.| |\-]{0,1}|^[0-9]{3}[\.|\-| ]?)?[0-9]{3}(\.|\-| )?[0-9]{4}$/ required"></div>
+<script type="text/javascript">
+					    if(typeof wFORMS != 'undefined') {
+						    if(wFORMS.behaviors.validation) {
+							    wFORMS.behaviors.validation.rules['customtfa_375'] =  { selector: '*[id="tfa_375"]', check: 'validateCustom'};
+							    wFORMS.behaviors.validation.messages['customtfa_375'] = "Please enter a US phone number";
+						    }
+					    }</script>
+</div>
+<div id="tfa_374-D" class="oneField     ">
+<label id="tfa_374-L" for="tfa_374" class="label preField ">Home Phone </label><br><div class="inputWrapper"><input type="text" id="tfa_374" name="tfa_374" value="" placeholder="" autoformat="(###) ###-####" title="Home Phone " class="validate-custom /^([\(]{1}[0-9]{3}[\)]{1}[\.| |\-]{0,1}|^[0-9]{3}[\.|\-| ]?)?[0-9]{3}(\.|\-| )?[0-9]{4}$/"></div>
+<script type="text/javascript">
+					    if(typeof wFORMS != 'undefined') {
+						    if(wFORMS.behaviors.validation) {
+							    wFORMS.behaviors.validation.rules['customtfa_374'] =  { selector: '*[id="tfa_374"]', check: 'validateCustom'};
+							    wFORMS.behaviors.validation.messages['customtfa_374'] = "Please enter a US Phone number";
+						    }
+					    }</script>
+</div>
+<div id="tfa_85-D" class="oneField     ">
+<label id="tfa_85-L" for="tfa_85" class="label preField reqMark">Country</label><br><div class="inputWrapper"><select id="tfa_85" name="tfa_85" title="Country" class="required"><option value="">Please select...</option>
+<option value="tfa_492" id="tfa_492" class="">United States</option>
+<option value="tfa_493" id="tfa_493" class="">Afghanistan- Islamic State of</option>
+<option value="tfa_494" id="tfa_494" class="">Albania</option>
+<option value="tfa_495" id="tfa_495" class="">Algeria</option>
+<option value="tfa_496" id="tfa_496" class="">American Samoa</option>
+<option value="tfa_497" id="tfa_497" class="">Andorra- Principality of</option>
+<option value="tfa_498" id="tfa_498" class="">Angola</option>
+<option value="tfa_499" id="tfa_499" class="">Anguilla</option>
+<option value="tfa_500" id="tfa_500" class="">Antarctica</option>
+<option value="tfa_501" id="tfa_501" class="">Antigua and Barbuda</option>
+<option value="tfa_502" id="tfa_502" class="">Argentina</option>
+<option value="tfa_503" id="tfa_503" class="">Armenia</option>
+<option value="tfa_504" id="tfa_504" class="">Aruba</option>
+<option value="tfa_505" id="tfa_505" class="">Australia</option>
+<option value="tfa_506" id="tfa_506" class="">Austria</option>
+<option value="tfa_507" id="tfa_507" class="">Azerbaidjan</option>
+<option value="tfa_508" id="tfa_508" class="">Bahamas</option>
+<option value="tfa_509" id="tfa_509" class="">Bahrain</option>
+<option value="tfa_510" id="tfa_510" class="">Bangladesh</option>
+<option value="tfa_511" id="tfa_511" class="">Barbados</option>
+<option value="tfa_512" id="tfa_512" class="">Belarus</option>
+<option value="tfa_513" id="tfa_513" class="">Belgium</option>
+<option value="tfa_514" id="tfa_514" class="">Belize</option>
+<option value="tfa_515" id="tfa_515" class="">Benin</option>
+<option value="tfa_516" id="tfa_516" class="">Bermuda</option>
+<option value="tfa_517" id="tfa_517" class="">Bhutan</option>
+<option value="tfa_518" id="tfa_518" class="">Bolivia</option>
+<option value="tfa_519" id="tfa_519" class="">Bosnia-Herzegovina</option>
+<option value="tfa_520" id="tfa_520" class="">Botswana</option>
+<option value="tfa_521" id="tfa_521" class="">Bouvet Island</option>
+<option value="tfa_522" id="tfa_522" class="">Brazil</option>
+<option value="tfa_523" id="tfa_523" class="">British Indian Ocean Territory</option>
+<option value="tfa_524" id="tfa_524" class="">Brunei Darussalam</option>
+<option value="tfa_525" id="tfa_525" class="">Bulgaria</option>
+<option value="tfa_526" id="tfa_526" class="">Burkina Faso</option>
+<option value="tfa_527" id="tfa_527" class="">Burundi</option>
+<option value="tfa_528" id="tfa_528" class="">Cambodia- Kingdom of</option>
+<option value="tfa_529" id="tfa_529" class="">Cameroon</option>
+<option value="tfa_530" id="tfa_530" class="">Canada</option>
+<option value="tfa_531" id="tfa_531" class="">Cape Verde</option>
+<option value="tfa_532" id="tfa_532" class="">Cayman Islands</option>
+<option value="tfa_533" id="tfa_533" class="">Central African Republic</option>
+<option value="tfa_534" id="tfa_534" class="">Chad</option>
+<option value="tfa_535" id="tfa_535" class="">Chile</option>
+<option value="tfa_536" id="tfa_536" class="">China</option>
+<option value="tfa_537" id="tfa_537" class="">Christmas Island</option>
+<option value="tfa_538" id="tfa_538" class="">Cocos (Keeling) Islands</option>
+<option value="tfa_539" id="tfa_539" class="">Colombia</option>
+<option value="tfa_540" id="tfa_540" class="">Comoros</option>
+<option value="tfa_541" id="tfa_541" class="">Congo</option>
+<option value="tfa_542" id="tfa_542" class="">Congo- The Democratic Republic of the</option>
+<option value="tfa_543" id="tfa_543" class="">Cook Islands</option>
+<option value="tfa_544" id="tfa_544" class="">Costa Rica</option>
+<option value="tfa_545" id="tfa_545" class="">Croatia</option>
+<option value="tfa_546" id="tfa_546" class="">Cuba</option>
+<option value="tfa_547" id="tfa_547" class="">Cyprus</option>
+<option value="tfa_548" id="tfa_548" class="">Czech Republic</option>
+<option value="tfa_549" id="tfa_549" class="">Denmark</option>
+<option value="tfa_550" id="tfa_550" class="">Djibouti</option>
+<option value="tfa_551" id="tfa_551" class="">Dominica</option>
+<option value="tfa_552" id="tfa_552" class="">Dominican Republic</option>
+<option value="tfa_553" id="tfa_553" class="">East Timor</option>
+<option value="tfa_554" id="tfa_554" class="">Ecuador</option>
+<option value="tfa_555" id="tfa_555" class="">Egypt</option>
+<option value="tfa_556" id="tfa_556" class="">El Salvador</option>
+<option value="tfa_557" id="tfa_557" class="">Equatorial Guinea</option>
+<option value="tfa_558" id="tfa_558" class="">Eritrea</option>
+<option value="tfa_559" id="tfa_559" class="">Estonia</option>
+<option value="tfa_560" id="tfa_560" class="">Ethiopia</option>
+<option value="tfa_561" id="tfa_561" class="">Falkland Islands</option>
+<option value="tfa_562" id="tfa_562" class="">Faroe Islands</option>
+<option value="tfa_563" id="tfa_563" class="">Fiji</option>
+<option value="tfa_564" id="tfa_564" class="">Finland</option>
+<option value="tfa_565" id="tfa_565" class="">Former Czechoslovakia</option>
+<option value="tfa_566" id="tfa_566" class="">Former USSR</option>
+<option value="tfa_567" id="tfa_567" class="">France</option>
+<option value="tfa_568" id="tfa_568" class="">France (European Territory)</option>
+<option value="tfa_569" id="tfa_569" class="">French Guyana</option>
+<option value="tfa_570" id="tfa_570" class="">French Southern Territories</option>
+<option value="tfa_571" id="tfa_571" class="">Gabon</option>
+<option value="tfa_572" id="tfa_572" class="">Gambia</option>
+<option value="tfa_573" id="tfa_573" class="">Georgia</option>
+<option value="tfa_574" id="tfa_574" class="">Germany</option>
+<option value="tfa_575" id="tfa_575" class="">Ghana</option>
+<option value="tfa_576" id="tfa_576" class="">Gibraltar</option>
+<option value="tfa_577" id="tfa_577" class="">Great Britain</option>
+<option value="tfa_578" id="tfa_578" class="">Greece</option>
+<option value="tfa_579" id="tfa_579" class="">Greenland</option>
+<option value="tfa_580" id="tfa_580" class="">Grenada</option>
+<option value="tfa_581" id="tfa_581" class="">Guadeloupe (French)</option>
+<option value="tfa_582" id="tfa_582" class="">Guam (USA)</option>
+<option value="tfa_583" id="tfa_583" class="">Guatemala</option>
+<option value="tfa_584" id="tfa_584" class="">Guinea</option>
+<option value="tfa_585" id="tfa_585" class="">Guinea Bissau</option>
+<option value="tfa_586" id="tfa_586" class="">Guyana</option>
+<option value="tfa_587" id="tfa_587" class="">Haiti</option>
+<option value="tfa_588" id="tfa_588" class="">Heard and McDonald Islands</option>
+<option value="tfa_589" id="tfa_589" class="">Holy See (Vatican City State)</option>
+<option value="tfa_590" id="tfa_590" class="">Honduras</option>
+<option value="tfa_591" id="tfa_591" class="">Hong Kong</option>
+<option value="tfa_592" id="tfa_592" class="">Hungary</option>
+<option value="tfa_593" id="tfa_593" class="">Iceland</option>
+<option value="tfa_594" id="tfa_594" class="">India</option>
+<option value="tfa_595" id="tfa_595" class="">Indonesia</option>
+<option value="tfa_596" id="tfa_596" class="">Iran</option>
+<option value="tfa_597" id="tfa_597" class="">Iraq</option>
+<option value="tfa_598" id="tfa_598" class="">Ireland</option>
+<option value="tfa_599" id="tfa_599" class="">Israel</option>
+<option value="tfa_600" id="tfa_600" class="">Italy</option>
+<option value="tfa_601" id="tfa_601" class="">Ivory Coast (Cote D'Ivoire)</option>
+<option value="tfa_602" id="tfa_602" class="">Jamaica</option>
+<option value="tfa_603" id="tfa_603" class="">Japan</option>
+<option value="tfa_604" id="tfa_604" class="">Jordan</option>
+<option value="tfa_605" id="tfa_605" class="">Kazakhstan</option>
+<option value="tfa_606" id="tfa_606" class="">Kenya</option>
+<option value="tfa_607" id="tfa_607" class="">Kiribati</option>
+<option value="tfa_608" id="tfa_608" class="">Korea (North)</option>
+<option value="tfa_609" id="tfa_609" class="">Korea (South)</option>
+<option value="tfa_610" id="tfa_610" class="">Kuwait</option>
+<option value="tfa_611" id="tfa_611" class="">Kyrgyz Republic (Kyrgyzstan)</option>
+<option value="tfa_612" id="tfa_612" class="">Laos</option>
+<option value="tfa_613" id="tfa_613" class="">Latvia</option>
+<option value="tfa_614" id="tfa_614" class="">Lebanon</option>
+<option value="tfa_615" id="tfa_615" class="">Lesotho</option>
+<option value="tfa_616" id="tfa_616" class="">Liberia</option>
+<option value="tfa_617" id="tfa_617" class="">Libya</option>
+<option value="tfa_618" id="tfa_618" class="">Liechtenstein</option>
+<option value="tfa_619" id="tfa_619" class="">Lithuania</option>
+<option value="tfa_620" id="tfa_620" class="">Luxembourg</option>
+<option value="tfa_621" id="tfa_621" class="">Macau</option>
+<option value="tfa_622" id="tfa_622" class="">Macedonia</option>
+<option value="tfa_623" id="tfa_623" class="">Madagascar</option>
+<option value="tfa_624" id="tfa_624" class="">Malawi</option>
+<option value="tfa_625" id="tfa_625" class="">Malaysia</option>
+<option value="tfa_626" id="tfa_626" class="">Maldives</option>
+<option value="tfa_627" id="tfa_627" class="">Mali</option>
+<option value="tfa_628" id="tfa_628" class="">Malta</option>
+<option value="tfa_629" id="tfa_629" class="">Marshall Islands</option>
+<option value="tfa_630" id="tfa_630" class="">Martinique (French)</option>
+<option value="tfa_631" id="tfa_631" class="">Mauritania</option>
+<option value="tfa_632" id="tfa_632" class="">Mauritius</option>
+<option value="tfa_633" id="tfa_633" class="">Mayotte</option>
+<option value="tfa_634" id="tfa_634" class="">Mexico</option>
+<option value="tfa_635" id="tfa_635" class="">Micronesia</option>
+<option value="tfa_636" id="tfa_636" class="">Moldavia</option>
+<option value="tfa_637" id="tfa_637" class="">Monaco</option>
+<option value="tfa_638" id="tfa_638" class="">Mongolia</option>
+<option value="tfa_639" id="tfa_639" class="">Montserrat</option>
+<option value="tfa_640" id="tfa_640" class="">Morocco</option>
+<option value="tfa_641" id="tfa_641" class="">Mozambique</option>
+<option value="tfa_642" id="tfa_642" class="">Myanmar</option>
+<option value="tfa_643" id="tfa_643" class="">Namibia</option>
+<option value="tfa_644" id="tfa_644" class="">Nauru</option>
+<option value="tfa_645" id="tfa_645" class="">Nepal</option>
+<option value="tfa_646" id="tfa_646" class="">Netherlands</option>
+<option value="tfa_647" id="tfa_647" class="">Netherlands Antilles</option>
+<option value="tfa_648" id="tfa_648" class="">Neutral Zone</option>
+<option value="tfa_649" id="tfa_649" class="">New Caledonia (French)</option>
+<option value="tfa_650" id="tfa_650" class="">New Zealand</option>
+<option value="tfa_651" id="tfa_651" class="">Nicaragua</option>
+<option value="tfa_652" id="tfa_652" class="">Niger</option>
+<option value="tfa_653" id="tfa_653" class="">Nigeria</option>
+<option value="tfa_654" id="tfa_654" class="">Niue</option>
+<option value="tfa_655" id="tfa_655" class="">Norfolk Island</option>
+<option value="tfa_656" id="tfa_656" class="">Northern Mariana Islands</option>
+<option value="tfa_657" id="tfa_657" class="">North Korea</option>
+<option value="tfa_658" id="tfa_658" class="">Norway</option>
+<option value="tfa_659" id="tfa_659" class="">Oman</option>
+<option value="tfa_660" id="tfa_660" class="">Pakistan</option>
+<option value="tfa_661" id="tfa_661" class="">Palau</option>
+<option value="tfa_662" id="tfa_662" class="">Panama</option>
+<option value="tfa_663" id="tfa_663" class="">Papua New Guinea</option>
+<option value="tfa_664" id="tfa_664" class="">Paraguay</option>
+<option value="tfa_665" id="tfa_665" class="">Peru</option>
+<option value="tfa_666" id="tfa_666" class="">Philippines</option>
+<option value="tfa_667" id="tfa_667" class="">Pitcairn Island</option>
+<option value="tfa_668" id="tfa_668" class="">Poland</option>
+<option value="tfa_669" id="tfa_669" class="">Polynesia (French)</option>
+<option value="tfa_670" id="tfa_670" class="">Portugal</option>
+<option value="tfa_671" id="tfa_671" class="">Puerto Rico</option>
+<option value="tfa_672" id="tfa_672" class="">Qatar</option>
+<option value="tfa_673" id="tfa_673" class="">Reunion (French)</option>
+<option value="tfa_674" id="tfa_674" class="">Romania</option>
+<option value="tfa_675" id="tfa_675" class="">Russian Federation</option>
+<option value="tfa_676" id="tfa_676" class="">Rwanda</option>
+<option value="tfa_677" id="tfa_677" class="">S. Georgia &amp; S. Sandwich Isls.</option>
+<option value="tfa_678" id="tfa_678" class="">Saint Helena</option>
+<option value="tfa_679" id="tfa_679" class="">Saint Kitts &amp; Nevis Anguilla</option>
+<option value="tfa_680" id="tfa_680" class="">Saint Lucia</option>
+<option value="tfa_681" id="tfa_681" class="">Saint Pierre and Miquelon</option>
+<option value="tfa_682" id="tfa_682" class="">Saint Tome (Sao Tome) and Principe</option>
+<option value="tfa_683" id="tfa_683" class="">Saint Vincent &amp; Grenadines</option>
+<option value="tfa_684" id="tfa_684" class="">Samoa</option>
+<option value="tfa_685" id="tfa_685" class="">San Marino</option>
+<option value="tfa_686" id="tfa_686" class="">Saudi Arabia</option>
+<option value="tfa_687" id="tfa_687" class="">Senegal</option>
+<option value="tfa_688" id="tfa_688" class="">Serbia and Montenegro</option>
+<option value="tfa_689" id="tfa_689" class="">Seychelles</option>
+<option value="tfa_690" id="tfa_690" class="">Sierra Leone</option>
+<option value="tfa_691" id="tfa_691" class="">Singapore</option>
+<option value="tfa_692" id="tfa_692" class="">Slovak Republic</option>
+<option value="tfa_693" id="tfa_693" class="">Slovenia</option>
+<option value="tfa_694" id="tfa_694" class="">Solomon Islands</option>
+<option value="tfa_695" id="tfa_695" class="">Somalia</option>
+<option value="tfa_696" id="tfa_696" class="">South Africa</option>
+<option value="tfa_697" id="tfa_697" class="">South Korea</option>
+<option value="tfa_698" id="tfa_698" class="">Spain</option>
+<option value="tfa_699" id="tfa_699" class="">Sri Lanka</option>
+<option value="tfa_700" id="tfa_700" class="">Sudan</option>
+<option value="tfa_701" id="tfa_701" class="">Suriname</option>
+<option value="tfa_702" id="tfa_702" class="">Svalbard and Jan Mayen Islands</option>
+<option value="tfa_703" id="tfa_703" class="">Swaziland</option>
+<option value="tfa_704" id="tfa_704" class="">Sweden</option>
+<option value="tfa_705" id="tfa_705" class="">Switzerland</option>
+<option value="tfa_706" id="tfa_706" class="">Syria</option>
+<option value="tfa_707" id="tfa_707" class="">Tadjikistan</option>
+<option value="tfa_708" id="tfa_708" class="">Taiwan</option>
+<option value="tfa_709" id="tfa_709" class="">Tanzania</option>
+<option value="tfa_710" id="tfa_710" class="">Thailand</option>
+<option value="tfa_711" id="tfa_711" class="">Togo</option>
+<option value="tfa_712" id="tfa_712" class="">Tokelau</option>
+<option value="tfa_713" id="tfa_713" class="">Tonga</option>
+<option value="tfa_714" id="tfa_714" class="">Trinidad and Tobago</option>
+<option value="tfa_715" id="tfa_715" class="">Tunisia</option>
+<option value="tfa_716" id="tfa_716" class="">Turkey</option>
+<option value="tfa_717" id="tfa_717" class="">Turkmenistan</option>
+<option value="tfa_718" id="tfa_718" class="">Turks and Caicos Islands</option>
+<option value="tfa_719" id="tfa_719" class="">Tuvalu</option>
+<option value="tfa_720" id="tfa_720" class="">Uganda</option>
+<option value="tfa_721" id="tfa_721" class="">Ukraine</option>
+<option value="tfa_722" id="tfa_722" class="">United Arab Emirates</option>
+<option value="tfa_723" id="tfa_723" class="">United Kingdom</option>
+<option value="tfa_724" id="tfa_724" class="">United States</option>
+<option value="tfa_725" id="tfa_725" class="">Unknown</option>
+<option value="tfa_726" id="tfa_726" class="">Uruguay</option>
+<option value="tfa_727" id="tfa_727" class="">USA Minor Outlying Islands</option>
+<option value="tfa_728" id="tfa_728" class="">Uzbekistan</option>
+<option value="tfa_729" id="tfa_729" class="">Vanuatu</option>
+<option value="tfa_730" id="tfa_730" class="">Venezuela</option>
+<option value="tfa_731" id="tfa_731" class="">Vietnam</option>
+<option value="tfa_732" id="tfa_732" class="">Virgin Islands (British)</option>
+<option value="tfa_733" id="tfa_733" class="">Virgin Islands (USA)</option>
+<option value="tfa_734" id="tfa_734" class="">Wallis and Futuna Islands</option>
+<option value="tfa_735" id="tfa_735" class="">Western Sahara</option>
+<option value="tfa_736" id="tfa_736" class="">Yemen</option>
+<option value="tfa_737" id="tfa_737" class="">Zaire</option>
+<option value="tfa_738" id="tfa_738" class="">Zambia</option>
+<option value="tfa_739" id="tfa_739" class="">Zimbabwe</option></select></div>
+</div>
+</fieldset>
+<fieldset id="tfa_283" class="section inline">
+<legend id="tfa_283-L"><u><b>Program Information</b></u></legend>
+<div id="tfa_417" class="section column group">
+<div id="tfa_294-D" class="oneField     ">
+<label id="tfa_294-L" for="tfa_294" class="label preField reqMark">Anticipated Start Year  </label><br><div class="inputWrapper"><select id="tfa_294" name="tfa_294" title="Anticipated Start Year " class="required"><option value="">Please select...</option>
+<option value="tfa_913" id="tfa_913" class="">2016</option>
+<option value="tfa_750" id="tfa_750" class="">2017</option>
+<option value="tfa_751" id="tfa_751" class="">2018</option>
+<option value="tfa_752" id="tfa_752" class="">2019</option>
+<option value="tfa_799" id="tfa_799" class="">2020</option>
+<option value="tfa_800" id="tfa_800" class="">2021</option></select></div>
+</div>
+<div id="tfa_285-D" class="oneField     ">
+<label id="tfa_285-L" for="tfa_285" class="label preField reqMark">Anticipated Start Term  </label><br><div class="inputWrapper"><select id="tfa_285" name="tfa_285" title="Anticipated Start Term " class="required"><option value="">Please select...</option>
+<option value="tfa_286" id="tfa_286" class="">Fall</option>
+<option value="tfa_290" id="tfa_290" class="">Spring</option>
+<option value="tfa_292" id="tfa_292" class="">Summer</option></select></div>
+</div>
+</div>
+<div id="tfa_790-D" class="oneField     ">
+<label id="tfa_790-L" for="tfa_790" class="label preField reqMark">Program&nbsp;</label><br><div class="inputWrapper"><select id="tfa_790" name="tfa_790" title="Program " class="required"><option value="">Please select...</option>
+<option value="tfa_801" id="tfa_801" data-conditionals="#tfa_331,#tfa_778,#tfa_766,#tfa_772,#tfa_796,#tfa_1147" class="">Undergraduate</option>
+<option value="tfa_802" id="tfa_802" data-conditionals="#tfa_986,#tfa_1061,#tfa_1175" class="">Graduate</option></select></div>
+</div>
+<div id="tfa_331-D" class="oneField     ">
+<label id="tfa_331-L" for="tfa_331" class="label preField reqMark">Anticipated Major </label><br><div class="inputWrapper"><select id="tfa_331" name="tfa_331" data-condition="`#tfa_801`" title="Anticipated Major " class="required"><option value="">Please select...</option>
+<option value="tfa_819" id="tfa_819" class="">Accounting</option>
+<option value="tfa_820" id="tfa_820" class="">Accounting (2-year degree)</option>
+<option value="tfa_821" id="tfa_821" class="">Anthropology</option>
+<option value="tfa_822" id="tfa_822" class="">Biology (Bachelor of Arts)</option>
+<option value="tfa_823" id="tfa_823" class="">Biology (Bachelor of Science)</option>
+<option value="tfa_824" id="tfa_824" class="">Business (2-year degree)</option>
+<option value="tfa_825" id="tfa_825" class="">Business Management (4-year degree)</option>
+<option value="tfa_826" id="tfa_826" class="">Catechetics</option>
+<option value="tfa_827" id="tfa_827" class="">Chemistry (Bachelor of Arts)</option>
+<option value="tfa_828" id="tfa_828" class="">Chemistry (Bachelor of Science)</option>
+<option value="tfa_829" id="tfa_829" class="">Child Development (2-year degree)</option>
+<option value="tfa_830" id="tfa_830" class="">Classics</option>
+<option value="tfa_831" id="tfa_831" class="">Communication Arts </option>
+<option value="tfa_832" id="tfa_832" class="">Computer Information Science</option>
+<option value="tfa_833" id="tfa_833" class="">Computer Science</option>
+<option value="tfa_834" id="tfa_834" class="">Drama</option>
+<option value="tfa_835" id="tfa_835" class="">Economics (Bachelor of Arts)</option>
+<option value="tfa_836" id="tfa_836" class="">Economics (Bachelor of Science)</option>
+<option value="tfa_837" id="tfa_837" class="">Education</option>
+<option value="tfa_838" id="tfa_838" class="">English</option>
+<option value="tfa_839" id="tfa_839" class="">Finance</option>
+<option value="tfa_840" id="tfa_840" class="">French</option>
+<option value="tfa_841" id="tfa_841" class="">General Studies (2-year degree)</option>
+<option value="tfa_842" id="tfa_842" class="">German</option>
+<option value="tfa_843" id="tfa_843" class="">History</option>
+<option value="tfa_844" id="tfa_844" class="">Humanities &amp; Catholic Culture</option>
+<option value="tfa_845" id="tfa_845" class="">International Business</option>
+<option value="tfa_846" id="tfa_846" class="">Marketing</option>
+<option value="tfa_847" id="tfa_847" class="">Mathematical Science</option>
+<option value="tfa_848" id="tfa_848" class="">Music, Sacred</option>
+<option value="tfa_849" id="tfa_849" class="">Non-Degree</option>
+<option value="tfa_850" id="tfa_850" class="">Nursing</option>
+<option value="tfa_851" id="tfa_851" class="">Philosophy</option>
+<option value="tfa_852" id="tfa_852" class="">Political Science</option>
+<option value="tfa_853" id="tfa_853" class="">Pre-Engineering</option>
+<option value="tfa_854" id="tfa_854" class="">Psychology </option>
+<option value="tfa_855" id="tfa_855" class="">Social Work</option>
+<option value="tfa_856" id="tfa_856" class="">Sociology</option>
+<option value="tfa_857" id="tfa_857" class="">Spanish</option>
+<option value="tfa_858" id="tfa_858" class="">Theology</option>
+<option value="tfa_859" id="tfa_859" class="">Theology (2-year degree)</option>
+<option value="tfa_860" id="tfa_860" class="">Undeclared</option></select></div>
+</div>
+<div id="tfa_986-D" class="oneField     ">
+<label id="tfa_986-L" for="tfa_986" class="label preField reqMark">Anticipated Degree </label><br><div class="inputWrapper"><select id="tfa_986" name="tfa_986" data-condition="`#tfa_802`" title="Anticipated Degree " class="required"><option value="">Please select...</option>
+<option value="tfa_1029" id="tfa_1029" class="">Graduate Business</option>
+<option value="tfa_1030" id="tfa_1030" class="">Graduate Catechetics &amp; Evangelization</option>
+<option value="tfa_1031" id="tfa_1031" class="">Graduate Clinical Mental Health Counseling</option>
+<option value="tfa_1032" id="tfa_1032" class="">Graduate Education Administration</option>
+<option value="tfa_1033" id="tfa_1033" class="">Graduate Education</option>
+<option value="tfa_1034" id="tfa_1034" class="">Graduate Nursing</option>
+<option value="tfa_1035" id="tfa_1035" class="">Graduate Philosophy</option>
+<option value="tfa_1036" id="tfa_1036" class="">Graduate Theology &amp; Christian Ministry</option>
+<option value="tfa_1037" id="tfa_1037" class="">Graduate Theology, Catechetics</option>
+<option value="tfa_1038" id="tfa_1038" class="">Graduate Theology, Canon Law Preparation</option>
+<option value="tfa_1039" id="tfa_1039" class="">Graduate Theology, Research Intensive</option></select></div>
+</div>
+<div id="tfa_778-D" class="oneField     ">
+<label id="tfa_778-L" for="tfa_778" class="label preField reqMark">UG Student Type&nbsp;</label><br><div class="inputWrapper"><select id="tfa_778" name="tfa_778" data-condition="`#tfa_801`" title="UG Student Type " class="required"><option value="">Please select...</option>
+<option value="tfa_882" id="tfa_882" class="">Post-Secondary</option>
+<option value="tfa_875" id="tfa_875" class="">UG - Currently Senior in HS</option>
+<option value="tfa_887" id="tfa_887" class="">UG currently Freshman in HS</option>
+<option value="tfa_885" id="tfa_885" class="">UG currently Junior in HS</option>
+<option value="tfa_886" id="tfa_886" class="">UG currently Sophomore in HS</option>
+<option value="tfa_884" id="tfa_884" class="">UG Distance Learning</option>
+<option value="tfa_883" id="tfa_883" class="">UG Non-Degree</option>
+<option value="tfa_880" id="tfa_880" class="">UG Reactivate</option>
+<option value="tfa_879" id="tfa_879" class="">UG Readmit</option>
+<option value="tfa_877" id="tfa_877" class="">UG Transfer</option>
+<option value="tfa_881" id="tfa_881" class="">UG Transient</option></select></div>
+</div>
+<div id="tfa_1061-D" class="oneField     ">
+<label id="tfa_1061-L" for="tfa_1061" class="label preField reqMark">Graduate Student Type&nbsp;</label><br><div class="inputWrapper"><select id="tfa_1061" name="tfa_1061" data-condition="`#tfa_802`" title="Graduate Student Type " class="required"><option value="">Please select...</option>
+<option value="tfa_1070" id="tfa_1070" class="">New Grad</option>
+<option value="tfa_1062" id="tfa_1062" class="">GR Accelerated - Currently FUS student</option>
+<option value="tfa_1063" id="tfa_1063" class="">GR Distance/Online</option>
+<option value="tfa_1064" id="tfa_1064" class="">GR Masters +20</option>
+<option value="tfa_1065" id="tfa_1065" class="">Grad Non-Degree</option>
+<option value="tfa_1066" id="tfa_1066" class="">Grad Reactivate</option>
+<option value="tfa_1067" id="tfa_1067" class="">Grad Readmit</option>
+<option value="tfa_1068" id="tfa_1068" class="">Grad Transfer</option>
+<option value="tfa_1069" id="tfa_1069" class="">Grad Transient</option></select></div>
+</div>
+<div id="tfa_796-D" class="oneField     ">
+<label id="tfa_796-L" for="tfa_796" class="label preField reqMark">Anticipated Student Housing&nbsp;</label><br><div class="inputWrapper"><select id="tfa_796" name="tfa_796" data-condition="`#tfa_801`" title="Anticipated Student Housing " class="required"><option value="">Please select...</option>
+<option value="tfa_900" id="tfa_900" class="">On Campus Resident</option>
+<option value="tfa_901" id="tfa_901" class="">Commuter (local student)</option>
+<option value="tfa_902" id="tfa_902" class="">Off-Campus </option></select></div>
+</div>
+<div id="tfa_766-D" class="oneField     ">
+<label id="tfa_766-L" for="tfa_766" class="label preField reqMark">High School Graduation Year&nbsp;</label><br><div class="inputWrapper"><select id="tfa_766" name="tfa_766" data-condition="`#tfa_801`" title="High School Graduation Year " class="required"><option value="">Please select...</option>
+<option value="tfa_890" id="tfa_890" class="">2012</option>
+<option value="tfa_891" id="tfa_891" class="">2013</option>
+<option value="tfa_892" id="tfa_892" class="">2014</option>
+<option value="tfa_893" id="tfa_893" class="">2015</option>
+<option value="tfa_894" id="tfa_894" class="">2016</option>
+<option value="tfa_895" id="tfa_895" class="">2017</option>
+<option value="tfa_896" id="tfa_896" class="">2018</option>
+<option value="tfa_897" id="tfa_897" class="">2019</option>
+<option value="tfa_898" id="tfa_898" class="">2020</option>
+<option value="tfa_899" id="tfa_899" class="">2021</option></select></div>
+</div>
+<div id="tfa_772-D" class="oneField     ">
+<label id="tfa_772-L" for="tfa_772" class="label preField reqMark">Type of High School&nbsp;</label><br><div class="inputWrapper"><select id="tfa_772" name="tfa_772" data-condition="`#tfa_801`" title="Type of High School " class="required"><option value="">Please select...</option>
+<option value="tfa_903" id="tfa_903" class="">Public</option>
+<option value="tfa_904" id="tfa_904" class="">Private</option>
+<option value="tfa_905" id="tfa_905" class="">Parochial</option>
+<option value="tfa_906" id="tfa_906" class="">Home School</option>
+<option value="tfa_907" id="tfa_907" class="">Catholic HS</option>
+<option value="tfa_908" id="tfa_908" class="">Christian (non-Catholic) HS</option>
+<option value="tfa_909" id="tfa_909" class="">Other Independent, Religious</option>
+<option value="tfa_910" id="tfa_910" class="">Charter</option>
+<option value="tfa_911" id="tfa_911" class="">Correspondence</option>
+<option value="tfa_912" id="tfa_912" class="">Other</option></select></div>
+</div>
+<div id="tfa_1147-D" class="oneField     ">
+<label id="tfa_1147-L" for="tfa_1147" class="label preField reqMark">Campus Location </label><br><div class="inputWrapper"><select id="tfa_1147" name="tfa_1147" data-condition="`#tfa_801`" title="Campus Location " class="required"><option value="">Please select...</option>
+<option value="tfa_1158" id="tfa_1158" class="">Main Campus</option>
+<option value="tfa_1162" id="tfa_1162" class="">Gaming, Austria</option>
+<option value="tfa_1181" id="tfa_1181" class="">Off Campus Course</option></select></div>
+</div>
+<div id="tfa_1175-D" class="oneField     ">
+<label id="tfa_1175-L" for="tfa_1175" class="label preField reqMark">Campus Location </label><br><div class="inputWrapper"><select id="tfa_1175" name="tfa_1175" data-condition="`#tfa_802`" title="Campus Location " class="required"><option value="">Please select...</option>
+<option value="tfa_1176" id="tfa_1176" class="">Main Campus</option>
+<option value="tfa_1177" id="tfa_1177" class="">Online</option>
+<option value="tfa_1178" id="tfa_1178" class="">Gaming, Austria</option>
+<option value="tfa_1182" id="tfa_1182" class="">Off Campus Course</option></select></div>
+</div>
+<div id="tfa_369-D" class="oneField     ">
+<label id="tfa_369-L" for="tfa_369" class="label preField reqMark">What is the name of the school you currently (or most recently) attend?&nbsp;&nbsp; Choose <i><b>Unknown School</b></i> if no match </label><br><div class="inputWrapper"><input type="text" id="tfa_369" name="tfa_369" value="" placeholder="" title="What is the name of the school you currently (or most recently) attend?   Choose Unknown School if no match " class="required"></div>
+</div>
+<div id="tfa_784-D" class="oneField     ">
+<label id="tfa_784-L" for="tfa_784" class="label preField reqMark">Level of Interest in Franciscan&nbsp;</label><br><div class="inputWrapper"><select id="tfa_784" name="tfa_784" title="Level of Interest in Franciscan " class="required"><option value="">Please select...</option>
+<option value="tfa_861" id="tfa_861" class="">Very High</option>
+<option value="tfa_862" id="tfa_862" class="">High</option>
+<option value="tfa_863" id="tfa_863" class="">Medium</option>
+<option value="tfa_864" id="tfa_864" class="">Low</option></select></div>
+</div>
+</fieldset>
+<fieldset id="tfa_370" class="section inline">
+<div id="tfa_371-D" class="oneField     ">
+<label id="tfa_371-L" for="tfa_371" class="label preField ">Birthdate (mm/dd/yyyy) </label><br><div class="inputWrapper"><input type="text" id="tfa_371" name="tfa_371" value="" placeholder="" max="1/1/2005" autoformat="##/##/####" title="Birthdate (mm/dd/yyyy) " class="validate-date"></div>
+</div>
+<div id="tfa_373-D" class="oneField     ">
+<label id="tfa_373-L" for="tfa_373" class="label preField ">Gender</label><br><div class="inputWrapper"><select id="tfa_373" name="tfa_373" title="Gender" class=""><option value="">Please select...</option>
+<option value="tfa_410" id="tfa_410" class="">Female</option>
+<option value="tfa_415" id="tfa_415" class="">Male</option></select></div>
+</div>
+<div id="tfa_356-D" class="oneField     ">
+<label id="tfa_356-L" for="tfa_356" class="label preField ">How did you first hear about us?&nbsp;</label><br><div class="inputWrapper"><select id="tfa_356" name="tfa_356" title="How did you first hear about us? " class=""><option value="">Please select...</option>
+<option value="tfa_1071" id="tfa_1071" class="">ACT List Mailing</option>
+<option value="tfa_1072" id="tfa_1072" class="">Admissions Counselor</option>
+<option value="tfa_1073" id="tfa_1073" class="">Advertisement</option>
+<option value="tfa_1074" id="tfa_1074" class="">Alumni</option>
+<option value="tfa_1075" id="tfa_1075" class="">Apostolate Famliy Consecr</option>
+<option value="tfa_1076" id="tfa_1076" class="">Billboard</option>
+<option value="tfa_1077" id="tfa_1077" class="">Brother/Sister</option>
+<option value="tfa_1078" id="tfa_1078" class="">Catholic Student Center</option>
+<option value="tfa_1080" id="tfa_1080" class="">Catholic World Report</option>
+<option value="tfa_1079" id="tfa_1079" class="">Catholics United 4 Faith</option>
+<option value="tfa_1082" id="tfa_1082" class="">College Fair</option>
+<option value="tfa_1081" id="tfa_1081" class="">Colleges of Distinction</option>
+<option value="tfa_1084" id="tfa_1084" class="">Conf-Adult (non-FUS)</option>
+<option value="tfa_1085" id="tfa_1085" class="">Conf-FUS Adult</option>
+<option value="tfa_1086" id="tfa_1086" class="">Conf-FUS Youth Off-Campus</option>
+<option value="tfa_1087" id="tfa_1087" class="">Conf-FUS Youth On-Campus</option>
+<option value="tfa_1088" id="tfa_1088" class="">Conf-Home School</option>
+<option value="tfa_1089" id="tfa_1089" class="">Conf-Other</option>
+<option value="tfa_1090" id="tfa_1090" class="">Conf-Youth Leaders</option>
+<option value="tfa_1091" id="tfa_1091" class="">Crisis Magazine</option>
+<option value="tfa_1092" id="tfa_1092" class="">Current Student</option>
+<option value="tfa_1093" id="tfa_1093" class="">Diocesan Newspaper</option>
+<option value="tfa_1094" id="tfa_1094" class="">EWTN</option>
+<option value="tfa_1095" id="tfa_1095" class="">Facebook</option>
+<option value="tfa_1096" id="tfa_1096" class="">First Things</option>
+<option value="tfa_1097" id="tfa_1097" class="">FOCUS</option>
+<option value="tfa_1098" id="tfa_1098" class="">Fr. Michael Scanlan</option>
+<option value="tfa_1099" id="tfa_1099" class="">Franciscan Univ. Presents</option>
+<option value="tfa_1100" id="tfa_1100" class="">Friend and/or Friends</option>
+<option value="tfa_1101" id="tfa_1101" class="">FUS Employee: non-faculty</option>
+<option value="tfa_1102" id="tfa_1102" class="">FUS Faculty Member</option>
+<option value="tfa_1103" id="tfa_1103" class="">FUS Website</option>
+<option value="tfa_1104" id="tfa_1104" class="">General (Search) Brochure</option>
+<option value="tfa_1105" id="tfa_1105" class="">Graduate School Fair</option>
+<option value="tfa_1106" id="tfa_1106" class="">Guidance Counselor</option>
+<option value="tfa_1107" id="tfa_1107" class="">High School</option>
+<option value="tfa_1108" id="tfa_1108" class="">High School Teacher</option>
+<option value="tfa_1186" id="tfa_1186" class="">Homeschool Connections</option>
+<option value="tfa_1109" id="tfa_1109" class="">Internet Advertising</option>
+<option value="tfa_1110" id="tfa_1110" class="">Internet/Web Search</option>
+<option value="tfa_1111" id="tfa_1111" class="">Legatus Online</option>
+<option value="tfa_1112" id="tfa_1112" class="">Life Teen</option>
+<option value="tfa_1113" id="tfa_1113" class="">Local, lives in area</option>
+<option value="tfa_1114" id="tfa_1114" class="">Magazine</option>
+<option value="tfa_1083" id="tfa_1083" class="">March for Life</option>
+<option value="tfa_1115" id="tfa_1115" class="">National Cath Register</option>
+<option value="tfa_1116" id="tfa_1116" class="">National Cath. Youth Conf</option>
+<option value="tfa_1117" id="tfa_1117" class="">NET-National Evangel Team</option>
+<option value="tfa_1118" id="tfa_1118" class="">Newman Center</option>
+<option value="tfa_1119" id="tfa_1119" class="">Other</option>
+<option value="tfa_1120" id="tfa_1120" class="">Our Sunday Visitor</option>
+<option value="tfa_1121" id="tfa_1121" class="">Parent(s)</option>
+<option value="tfa_1122" id="tfa_1122" class="">Priest/Pastor</option>
+<option value="tfa_1123" id="tfa_1123" class="">Radio</option>
+<option value="tfa_1124" id="tfa_1124" class="">Relative-Aunt,Uncle,etc.</option>
+<option value="tfa_1125" id="tfa_1125" class="">Retreat</option>
+<option value="tfa_1126" id="tfa_1126" class="">SAT List Mailing</option>
+<option value="tfa_1127" id="tfa_1127" class="">Scott Hahn/St. Paul Inst.</option>
+<option value="tfa_1129" id="tfa_1129" class="">Television Advertisement</option>
+<option value="tfa_1128" id="tfa_1128" class="">TV-9</option>
+<option value="tfa_1130" id="tfa_1130" class="">Twitter</option>
+<option value="tfa_1131" id="tfa_1131" class="">Unknown</option>
+<option value="tfa_1132" id="tfa_1132" class="">World Youth Day</option>
+<option value="tfa_1133" id="tfa_1133" class="">Youth Group</option>
+<option value="tfa_1134" id="tfa_1134" class="">Youth Minister</option>
+<option value="tfa_1135" id="tfa_1135" class="">YouTube</option></select></div>
+</div>
+<div id="tfa_418-D" class="oneField     ">
+<label id="tfa_418-L" for="tfa_418" class="label preField ">If Other, please explain</label><br><div class="inputWrapper"><input type="text" id="tfa_418" name="tfa_418" value="" placeholder="" maxlength="100" title="If Other, please explain" class=""></div>
+</div>
+<div id="tfa_381-D" class="oneField   labelsAbove  ">
+<label id="tfa_381-L" for="tfa_381" class="label preField "><span id="j_id0:j_id6"><span id="j_id0:j_id6:j_id7:j_id45"><span id="j_id0:j_id6:j_id7:form:j_id50:28:j_id59"><span id="LaDescription" title="">Additional Comments, Questions, or Requests  </span></span></span></span></label><br><div class="inputWrapper"><textarea id="tfa_381" name="tfa_381" title="Additional Comments, Questions, or Requests " class=""></textarea></div>
+</div>
+</fieldset>
+<input type="hidden" id="tfa_383" name="tfa_383" value="Web Inquiry Form" class=""><div id="tfa_1183" class="section group">
+<input type="hidden" id="tfa_1184" name="tfa_1184" value="UA-5819863-15" class="calc-GOOGLEACCOUNTID"><div class="htmlSection" id="tfa_1185"><div class="htmlContent" id="tfa_1185-HTML"><script type="text/javascript">
+/* Google Tracking Code   */
+
+(function(){
+	if(!document.querySelector && base2) {
+	  document.querySelector = base2.DOM.Element.querySelector
+	}
+	var gaId = document.querySelector('input.calc-GOOGLEACCOUNTID');
+	if(gaId) gaId = gaId.value;
+
+	if(gaId && !window._gaq) {
+	    window._gaq = window._gaq || [];
+	    window._gaq.push(['_setAccount', gaId]);
+        window._gaq.push(['_setAllowLinker', true]);
+	    window._gaq.push(['_trackPageview']);
+
+	    (function() {
+	      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	    })();
+	}
+})();
+
+</script></div></div>
+</div>
+<div class="actions" id="tfa_0-A"><input type="submit" class="primaryAction" value="Submit"></div>
+<div style="clear:both"></div>
+<input type="hidden" value="217723" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="e4ce772958ebf25445a4bc7e8f9cca12" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="91" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+</form>
+</div></div>
+
+  <p class="supportInfo" >
+        <a href="https://franciscan.tfaforms.net/forms/help/217723" target="new" style="font-size: 0.7em;">
+      Need assistance with this form?    </a>
+
+      </p>
+
+</div>

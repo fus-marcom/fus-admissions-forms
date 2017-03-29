@@ -21,6 +21,7 @@
   // Change this to whatever title the form should have
   $('.wFormTitle').html('Admissions Visit');
 
+  $('head').append('<title>' + $('.wFormTitle').text() + ' | Franciscan University of Steubenville</title>');
 
   $('textarea, input[type="text"]').not('input[style="display:none;"]').attr('style', 'width: 100% !important');
   $('textarea').addClass('materialize-textarea');

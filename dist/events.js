@@ -66,6 +66,8 @@ jQuery(document).ready(function ($) {
 
   $('h1').addClass('page-title-heading');
 
+  $('head').append('<title>' + $('h1').text() + ' | Franciscan University of Steubenville</title>');
+
   //fix width for event results title heading
   $('h1').parent().css('width', '100%');
 
