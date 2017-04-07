@@ -23,9 +23,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
   gradYearInput.addEventListener('input', function (e) {
     if (this.value < currentYear ) {
-      studentTypeInput.value = 'transfer';
+      studentTypeInput.value = 'U - Transfer';
     } else {
-      studentTypeInput.value = 'UG = Senior in HS';
+      studentTypeInput.value = 'U - Senior';
     }
   });
 });
@@ -83,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
   });
 } else {
   document.addEventListener("DOMContentLoaded", function(event) {
-    console.log(document.getElementById('code-tfa_0'));
     document.getElementById('code-tfa_0').remove();
   });
 
