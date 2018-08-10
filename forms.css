@@ -238,6 +238,18 @@ textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 2px solid #ffc658;
 }
 
+.wForm .oneField input {
+  background: none;
+  border-color: inherit;
+  border: none;
+  border-width: 1px;
+  padding: 2px 0 2px 2px;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 0;
+  font-size: 1rem;
+}
+
 div .wForm textarea {
   background: none;
   border: none;
