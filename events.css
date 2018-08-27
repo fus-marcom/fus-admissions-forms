@@ -586,7 +586,7 @@ div .noImgArowRight {
   }
 }
 
-div form select.guestSelect {
+body form select.guestSelect {
   width: 100%;
   -webkit-appearance: none;
   -moz-appearance: none;
