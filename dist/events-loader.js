@@ -42,11 +42,11 @@ function loadNewStyles() {
     document.head.appendChild(materialCss);
 
     var eventJs = document.createElement("script");
-    eventJs.setAttribute('src', 'https://jesserweigel.github.io/fus-admissions-forms/dist/events.js');
+    eventJs.setAttribute('src', 'https://raw.githubusercontent.com/fus-marcom/fus-admissions-forms/dist/events.js');
     eventJs.setAttribute('type', 'text/javascript');
 
     var eventCss = document.createElement("link");
-    eventCss.href = "https://jesserweigel.github.io/fus-admissions-forms/events.css";
+    eventCss.href = "https://raw.githubusercontent.com/fus-marcom/fus-admissions-forms/events.css";
     eventCss.setAttribute('rel', 'stylesheet');
     eventCss.setAttribute('type', 'text/css');
 

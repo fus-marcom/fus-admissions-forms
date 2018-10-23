@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
 
-<link rel="stylesheet" href="https://jesserweigel.github.io/fus-admissions-forms/forms.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/fus-marcom/fus-admissions-forms/forms.css">
 
 <!--
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

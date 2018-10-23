@@ -4,7 +4,7 @@
 jQuery(document).ready(function ($) {
   $('link[href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"]').appendTo('head');
 
-  $('link[href="https://jesserweigel.github.io/fus-admissions-forms/events.css"]').appendTo('head');
+  $('link[href="https://raw.githubusercontent.com/fus-marcom/fus-admissions-forms/events.css"]').appendTo('head');
 
   $('body').prepend('\n    <nav>\n     <div class="nav-wrapper">\n       <a href="#" class="brand-logo center"><img class="responsive-img" src="https://franciscan.university/img/side-nav-logo.jpg" /></a>\n     </div>\n    </nav>\n    ');
 
@@ -71,11 +71,9 @@ jQuery(document).ready(function ($) {
   //fix width for event results title heading
   $('h1').parent().css('width', '100%');
 
-  $('h1').parent().next().next().next().css({ 'max-width': '70%', 'margin': '16px auto' });
+  $('h1').parent().next().next().next().css({ 'max-width': '70%', margin: '16px auto' });
 
-  $('.event-results .resultsHeader:nth-of-type(4)>div').html('Attending');
-
-  (function replaceTickets() {
+  $('.event-results .resultsHeader:nth-of-type(4)>div').html('Attending');(function replaceTickets() {
     console.log('run replaceTickets');
 
     $('.event-results .resultsHeader:nth-of-type(4)>div').html('Attending');
